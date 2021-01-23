@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+/*iPad*/
+@media (min-width:768px) {
+    .Nombre {
+        font-family: 'Libre Baskerville' ;font-size: 2rem; 
+    }
+    .MiImagen
+    {
+        width: 50vw;
+    }
+
+    .Designer
+    {
+        font-family: europa, sans-serif;
+        font-size: 4vw;
+    }
+    .RedesSociales
+    {
+        font-size: 3vw;
+    }
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/*Ordenador*/
+@media (min-width:1200px) {
+    .Nombre {
+        font-family: 'Libre Baskerville' ;font-size: 6rem; 
+    }
+    .MiImagen
+    {
+        width: 30vw;
+    }
+    .Designer
+    {
+        font-family: europa, sans-serif;
+        font-size: 2vw;
+    }
+
+    .RedesSociales
+    {
+        font-size: 1vw;
+    }
+}
+
+/*Movil*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 736px)
+{
+    .Nombre {
+        font-family: 'Libre Baskerville' ;font-size: 2rem; 
+    }
+
+    .MiImagen
+    {
+        width: 90vw;
+    }
+
+    .Designer
+    {
+        font-family: europa, sans-serif;
+        font-size: 4vw;
+    }
+    
+    .TituloPortafolio
+    {
+        font-size: 3rem;
+    }
+}
+
+/*Estilos Generales*/
+.CuerpoCoverPage
+{
+    background-image: url('../imgs/Burbujas.svg'); 
+    height: 100vw;
+    background-repeat: no-repeat;
+}
+
+body
+{
+    background-color: #d6d6d6; 
+}
+
+.RedesSociales
+{
+    font-family: europa, sans-serif;  color: #202020;
+    
+}
+a:hover
+{
+    color:#000000;
+    font-family: 'Libre Baskerville' ;
+}
+
+.TituloPortafolio
+{
+    font-family: 'Libre Baskerville'; font-weight:lighter ; letter-spacing: 3px;
+}
+
+/*Proyectos*/
+.CardTitulo
+{
+    font-family: 'Libre Baskerville';
+}
+
+.CardCuerpo
+{
+    font-family: wuropa, sans-serif;
+}
