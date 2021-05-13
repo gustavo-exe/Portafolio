@@ -1,84 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
-/*iPad*/
-@media (min-width:768px) {
-    .Nombre {
-        font-family: 'Libre Baskerville' ;font-size: 2rem; 
-    }
-    .MiImagen
-    {
-        width: 50vw;
-    }
+/*Estilos Generales*/
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #d6d6d6;
+    font-family: 'Libre Baskerville';
+    min-height: 100vh;
+}
 
-    .Designer
-    {
-        font-family: europa, sans-serif;
-        font-size: 4vw;
-    }
-    .RedesSociales
-    {
-        font-size: 3vw;
-    }
+.CuerpoCoverPage{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 1px solid #202020;
+    margin: 0rem 3rem 0rem 3rem;
+}
+.LogoTexto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo
+{
+    background-image: url('../imgs/MiCaricaturaIcono.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.Texto{
+    white-space: nowrap;
+    display: block;
+}
+
+main{
+    min-height: calc(100vh - 8rem);
+    display: flex;
+    align-items: center;
+}
+
+.Cover{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.AcercaDe{
+    padding: 3rem;
 }
 
 a
 {
     text-decoration: none;
-}
-
-/*Ordenador*/
-@media (min-width:1200px) {
-    .Nombre {
-        font-family: 'Libre Baskerville' ;font-size: 6rem; 
-    }
-    .MiImagen
-    {
-        width: 30vw;
-    }
-    .Designer
-    {
-        font-family: europa, sans-serif;
-        font-size: 2vw;
-    }
-
-    .RedesSociales
-    {
-        font-size: 1vw;
-    }
-}
-
-/*Movil*/
-@media only screen
-and (min-width: 320px)
-and (max-width: 736px)
-{
-    .Nombre {
-        font-family: 'Libre Baskerville' ;font-size: 2rem; 
-    }
-
-    .MiImagen
-    {
-        width: 90vw;
-    }
-
-    .Designer
-    {
-        font-family: europa, sans-serif;
-        font-size: 4vw;
-    }
-    
-    .TituloPortafolio
-    {
-        font-size: 3rem;
-    }
-}
-
-/*Estilos Generales*/
-.CuerpoCoverPage
-{
-    background-image: url('../imgs/Burbujas.svg'); 
-    height: 100vw;
-    background-repeat: no-repeat;
 }
 
 .btn{
@@ -89,11 +74,6 @@ and (max-width: 736px)
 .btn:hover{
     background-color: #ffd100;
     color: #202020;
-}
-
-body
-{
-    background-color: #d6d6d6; 
 }
 
 .RedesSociales
@@ -112,14 +92,6 @@ a:hover
     color: #f5f3ef;
 }
 
-.TituloPortafolio
-{
-    font-family: 'Libre Baskerville'; font-weight:lighter ; letter-spacing: 3px;
-}
-
-header{
-border-bottom: 1px solid #202020;
-}
 /*Proyectos*/
 .CardTitulo
 {
@@ -131,3 +103,56 @@ border-bottom: 1px solid #202020;
     font-family: wuropa, sans-serif;
 }
 
+/*Breakpoints*/
+
+/*Ordenador*/
+@media (min-width:1200px){
+    .Nombre{
+        font-size: 8rem;
+    }
+    .MiImagen
+    {
+        width: 30vw;
+    }
+    .RedesSociales
+    {
+        font-size: 1vw;
+    }
+
+}
+/*Tableta*/
+@media (min-width:768px){
+    .Nombre{
+        font-size: 7.5vw;
+    }
+    .CuerpoCoverPage{
+        min-height: auto;
+    }
+
+    .MiImagen{
+        width: 30vw;
+    }
+}
+
+/*Movil*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 736px)
+{
+    .Texto{
+        display: none;
+    }
+    
+    .Nombre{
+        font-size: 2rem;
+        text-align: center;
+        order: 2;
+        
+        width: 100%;
+    }
+
+    .MiImagen{
+        width: 70vw;
+        order: 1;
+    }
+}
