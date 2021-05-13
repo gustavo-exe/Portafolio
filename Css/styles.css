@@ -126,9 +126,24 @@ main{
 }
 
 .AcercaDe{
-    padding: 3rem;
+    padding: 0rem 3rem 3rem 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1::after{
+    display: flex;
+    flex-direction: column;
+    content: '';
+    border-top: 4px solid var(--Enfasis-Color);
+    width: 10%;
+    color: var(--Enfasis-Color);
 }
 
+.AcercaDe p:nth-of-type(1){
+    font-weight: bold;
+}
 a
 {
     text-decoration: none;
@@ -155,6 +170,10 @@ a
 @media (min-width:1200px){
     .Nombre{
         font-size: 8rem;
+    }
+
+    .AcercaDe{
+        padding: 18rem 18rem 18rem 18rem;
     }
     .MiImagen
     {
