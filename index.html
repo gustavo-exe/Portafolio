@@ -15,14 +15,28 @@
     <div class="CuerpoCoverPage">
         <header >
             <div class="LogoTexto"  >
-                
                 <div class="Logo"></div>
-                
                 <div class="Texto" >
                     Programador y diseñador
                 </div>
             </div>
+            
+            <div class="Menu" >
+                <button id="Despliegue" class="Hamburguer btn" >
+                    <img src="./imgs/icons/menu_black_24dp.svg" alt="" srcset="">
+                </button>
+                <nav class="Lista" >
+                    <a href="#AcercaDe" >Acerca de mí</a>
+                    <a href="" >Proyectos</a>
+                    <a href="" >Contacto</a>
+                </nav>
+            </div>
         </header>
+        <div id="MenuDesplegable" class="MenuDesplegable" >
+            <a href="#AcercaDe" >Acerca de mí</a>
+            <a href="" >Proyectos</a>
+            <a href="" >Contacto</a>
+        </div>
             
         <main>
             <div class="Cover">
@@ -32,7 +46,7 @@
         </main>
     </div>
     
-    <div class="AcercaDe" >
+    <div id="AcercaDe" class="AcercaDe" >
         <h1>Acerca de mi</h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, pariatur. Consectetur illo vel voluptate aut, et eos voluptates aliquam totam reprehenderit mollitia animi odio nihil repudiandae assumenda fugiat dolores ex!
     </div>
@@ -43,6 +57,7 @@
         <a class="RedesSociales" href="">Whatsapp</a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="./javascript/HamburgerMenu.js" ></script>
 </body>
 
 </html>

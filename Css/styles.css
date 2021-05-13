@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
+:root{
+    --Bg-color: #d6d6d6;
+    --Text-color: #202020;
+    --Hover-color: #f5f3ef;
+    --Enfasis-Color: #FFD100;
+}
+
 /*Estilos Generales*/
 body
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #d6d6d6;
+    background-color: var(--Bg-color);
     font-family: 'Libre Baskerville';
     min-height: 100vh;
 }
@@ -42,6 +49,67 @@ header{
     white-space: nowrap;
     display: block;
 }
+.Menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.MenuDesplegable{
+    background-color: var(--Text-color);
+    margin: 0rem 3rem 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--Hover-color);
+    padding: 0.2rem;
+    visibility: hidden;
+    height: 0px;
+}
+
+.Active{
+    visibility: visible;
+    height: auto;
+}
+
+.MenuDesplegable a{
+    color: var(--Hover-color);
+    width: 100%;
+    margin: 0.2rem;
+}
+
+.MenuDesplegable a:hover,
+.MenuDesplegable a:checked{
+    background-color: var(--Enfasis-Color);
+    color: var(--Text-color);
+}
+
+.Lista{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.Hamburguer{
+    visibility: hidden;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--Text-color);
+    transition: border-bottom .3s;
+}
+
+nav a:hover{
+    color: var(--Text-color);
+    border-bottom: 3px solid var(--Enfasis-Color);
+    
+}
+
 
 main{
     min-height: calc(100vh - 8rem);
@@ -67,40 +135,18 @@ a
 }
 
 .btn{
-    background-color: #202020;
-    color: #f5f3ef;
+    background-color: var(--Text-color);
+    color: var(--Hover-color);
 }
 
-.btn:hover{
-    background-color: #ffd100;
-    color: #202020;
+.btn:active{
+    background-color: var(--Enfasis-Color);
 }
 
 .RedesSociales
 {
     font-family: europa, sans-serif;  color: #202020;
     
-}
-
-a:hover
-{
-    color:#000000;
-    font-family: 'Libre Baskerville' ;
-}
-
-.enlace:hover{
-    color: #f5f3ef;
-}
-
-/*Proyectos*/
-.CardTitulo
-{
-    font-family: 'Libre Baskerville';
-}
-
-.CardCuerpo
-{
-    font-family: wuropa, sans-serif;
 }
 
 /*Breakpoints*/
@@ -139,6 +185,20 @@ a:hover
 and (min-width: 320px)
 and (max-width: 736px)
 {
+    .Lista{
+        visibility: hidden;
+    }
+
+    .Hamburguer{
+        visibility: visible;
+        background-color: transparent;
+    }
+
+    .Hamburguer img{
+        height: 2rem;
+        width: 2rem;
+    }
+
     .Texto{
         display: none;
     }
