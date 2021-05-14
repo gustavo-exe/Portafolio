@@ -81,6 +81,17 @@ and (max-width: 736px)
         --Dimensiones-Item: 15rem;
     }
     .Item{
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
+    }
+    .Item.Active .Descripcion{
+        transform: scale(1);
+        font-size: 0.8rem;
+    }
+}
+
+/*Tableta*/
+@media (min-width:768px){
+    .Item.Active .Descripcion{
+        transform: scale(1);
     }
 }
