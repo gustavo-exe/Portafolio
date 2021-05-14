@@ -2,12 +2,24 @@
     --Dimensiones-Item: 22rem;
 }
 
+.Container{
+    min-height: calc(100vh - 8rem);
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.Container h1{
+    margin-bottom: 2rem;
+}
+
+
 .Grid{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;   
-    padding: 3rem;
+    width: 100%;
 }
 
 .Item{
