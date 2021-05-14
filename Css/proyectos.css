@@ -1,0 +1,86 @@
+:root{
+    --Dimensiones-Item: 22rem;
+}
+
+.Grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;   
+    padding: 3rem;
+}
+
+.Item{
+    min-width: var(--Dimensiones-Item);
+    height: var(--Dimensiones-Item);
+    position: relative;
+    border-radius: 14px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+}
+
+.Item img{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit; 
+}
+
+.Item .Descripcion{
+    transform: scale(0);
+}
+
+
+.Item:hover .Descripcion{
+    transform: scale(1);
+}
+
+.BotonPrimario{
+    background-color: var(--Enfasis-Color);
+    color: var(--Text-color);
+}
+
+
+.BotonSecundario,
+.BotonSecundario:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--Enfasis-Color);
+}
+
+
+.Item .Descripcion{
+    transition: transform 0.25s;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 20;
+    color: var(--Hover-color);
+    left: 0;
+    top: 0;
+    width: var(--Dimensiones-Item);
+    height: var(--Dimensiones-Item);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: inherit;
+}
+h2{
+    margin-bottom: 1rem;
+}
+
+/*Break points*/
+/*Movil*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 736px)
+{
+    :root{
+        --Dimensiones-Item: 15rem;
+    }
+    .Item{
+        margin-bottom: 5rem;
+    }
+}
