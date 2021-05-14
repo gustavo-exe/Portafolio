@@ -82,7 +82,7 @@ header{
 }
 
 .MenuDesplegable a:hover,
-.MenuDesplegable a:checked{
+.MenuDesplegable a:active{
     background-color: var(--Enfasis-Color);
     color: var(--Text-color);
 }
@@ -109,7 +109,9 @@ nav a:hover{
     border-bottom: 3px solid var(--Enfasis-Color);
     
 }
-
+.Lista a:active .MenuDesplegable{
+    height: 0px;
+}
 
 main{
     min-height: calc(100vh - 8rem);
@@ -158,11 +160,6 @@ a
     background-color: var(--Enfasis-Color);
 }
 
-.RedesSociales
-{
-    font-family: europa, sans-serif;  color: #202020;
-    
-}
 
 /*Breakpoints*/
 
