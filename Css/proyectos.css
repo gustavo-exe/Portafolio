@@ -95,15 +95,11 @@ and (max-width: 736px)
     .Item{
         margin-bottom: 2rem;
     }
-    .Item.Active .Descripcion{
-        transform: scale(1);
+    .Descripcion{
         font-size: 0.8rem;
     }
-}
 
-/*Tableta*/
-@media (min-width:768px){
-    .Item.Active .Descripcion{
-        transform: scale(1);
+    .Texto{
+        display:block;
     }
 }
