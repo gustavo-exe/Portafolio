@@ -21,7 +21,7 @@
     overflow-x: auto;
     gap: 15rem;   
     width: 100%;
-    z-index: 1000;
+    z-index: 1;
     padding-top: 2rem;
     scrollbar-color: transparent transparent;
     scrollbar-width: 0px;
