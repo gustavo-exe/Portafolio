@@ -16,10 +16,17 @@
 
 .Grid{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;   
+    justify-content: left;
+    overflow-x: auto;
+    gap: 15rem;   
     width: 100%;
+    z-index: 1000;
+    padding-top: 2rem;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+    cursor: grab;
+    user-select: none;
 }
 
 .Item{
@@ -27,7 +34,6 @@
     height: var(--Dimensiones-Item);
     position: relative;
     border-radius: 14px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     margin-bottom: 2rem;
 }
 
