@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: left;
     overflow-x: auto;
-    gap: 15rem;   
+    gap: 10%;   
     width: 100%;
     z-index: 1;
     padding-top: 2rem;
@@ -104,7 +104,7 @@ and (max-width: 736px)
     .Descripcion{
         font-size: 0.8rem;
     }
-
+    
     .Texto{
         display:block;
     }

@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     color: var(--Hover-color);
-    padding: 5rem 3rem 3rem 3rem;
+    padding: 5rem 1rem 1rem 1rem;
     display:none;
     z-index: 5;
     background-image: url('../imgs/CirculoCuadradoTriangulo.svg');
@@ -23,7 +23,8 @@
 .MenuDesplegable a{
     color: var(--Hover-color);
     width: 100%;
-    margin: 1rem;
+    padding: 1rem 0.4rem 1rem 0.4rem;
+    margin-bottom: 1rem;
     display:flex;
     align-items: center;
 }
@@ -37,8 +38,8 @@
 .MenuDesplegable a::before{
     content:'';
     display:inline-block;
-    width: 30px;
-    height:100%;
+    width: 35px;
+    height:35px;
     margin-right: 1rem;
     background-repeat: no-repeat;
     background-position: center left;
