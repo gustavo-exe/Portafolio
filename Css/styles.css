@@ -97,13 +97,15 @@ main{
     flex-wrap: wrap;
 }
 
-.AcercaDe{
+.AcercaDe,
+.Herramientas{
     padding: 0rem 3rem 3rem 3rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 h1::after{
     display: flex;
     flex-direction: column;
@@ -129,7 +131,17 @@ a
 .btn:active{
     background-color: var(--Enfasis-Color);
 }
-
+/*Herramientas*/
+.Herramientas{
+    flex-direction: row;
+    align-items: center;
+}
+.Herramientas div{
+    padding: 3rem;
+}
+.Herramientas img{
+    width:40%;
+}
 
 /*Breakpoints*/
 
@@ -139,7 +151,7 @@ a
         font-size: 8rem;
     }
 
-    .AcercaDe{
+    .AcercaDe, .Herramientas{
         padding: 10rem 10rem 10rem 10rem;
     }
     .MiImagen
@@ -150,19 +162,25 @@ a
     {
         font-size: 1vw;
     }
-
+    .Herramientas h1{
+        font-size: 4rem;
+    }
 }
 /*Tableta*/
-@media (min-width:768px){
+@media only screen 
+and (min-width:767px)
+and (min-height:1024px){
     .Nombre{
         font-size: 7.5vw;
     }
     .CuerpoCoverPage{
         min-height: auto;
     }
-
     .MiImagen{
         width: 30vw;
+    }
+    .Herramientas img{
+        width:100%;
     }
 }
 
@@ -188,12 +206,18 @@ and (max-width: 736px)
     .Texto{
         display: none;
     }
-    
+    .Herramientas{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0rem 0rem 3rem 0rem;
+    }
+    .Herramientas img{
+        width:80%;
+    }
     .Nombre{
         font-size: 2rem;
         text-align: center;
         order: 2;
-        
         width: 100%;
     }
 
