@@ -56,3 +56,27 @@ a:nth-child(2)::before{
 a:nth-child(3)::before{
     background-image: url('https://img.icons8.com/fluency-systems-filled/30/ffffff/contact-card.png');
 }
+
+/*Movil*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 736px)
+{
+    .Lista{
+        visibility: hidden;
+    }
+
+    .Hamburguer{
+        visibility: visible;
+        background-color: transparent;
+    }
+
+    .Hamburguer img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .Texto{
+        display: none;
+    }
+}

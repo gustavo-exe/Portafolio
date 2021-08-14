@@ -1,84 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
-:root{
-    --Bg-color: #d6d6d6;
-    --Text-color: #202020;
-    --Hover-color: #f5f3ef;
-    --Enfasis-Color: #FFD100;
-}
-
-/*Estilos Generales*/
-body
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--Bg-color);
-    font-family: 'Libre Baskerville';
-    min-height: 100vh;
-}
-
-.CuerpoCoverPage{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    border-bottom: 1px solid #202020;
-    margin: 0rem 3rem 0rem 3rem;
-}
-.LogoTexto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Logo
-{
-    background-image: url('../imgs/MiCaricaturaIcono.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 5rem;
-    height: 5rem;
-}
-
-.Texto{
-    white-space: nowrap;
-    display: block;
-}
-.Menu{
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-}
-
-.Lista{
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-}
-
-.Hamburguer{
-    visibility: hidden;
-}
-
-nav a{
-    text-decoration: none;
-    color: var(--Text-color);
-    transition: border-bottom .3s;
-}
-
-nav a:hover{
-    color: var(--Text-color);
-    border-bottom: 3px solid var(--Enfasis-Color);
-    
-}
 .Lista a:active .MenuDesplegable{
     height: 0px;
 }
@@ -118,10 +37,6 @@ h1::after{
 
 .AcercaDe p:nth-of-type(1){
     font-weight: bold;
-}
-a
-{
-    text-decoration: none;
 }
 
 .btn{
@@ -220,23 +135,6 @@ and (min-height:1024px){
 and (min-width: 320px)
 and (max-width: 736px)
 {
-    .Lista{
-        visibility: hidden;
-    }
-
-    .Hamburguer{
-        visibility: visible;
-        background-color: transparent;
-    }
-
-    .Hamburguer img{
-        height: 2rem;
-        width: 2rem;
-    }
-
-    .Texto{
-        display: none;
-    }
     .Herramientas{
         flex-direction: column-reverse;
         align-items: center;

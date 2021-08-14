@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--Bg-color);
+    font-family: 'Libre Baskerville';
+    min-height: 100vh;
+}
+
+.CuerpoCoverPage{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a
+{
+    text-decoration: none;
+}
