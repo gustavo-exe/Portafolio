@@ -40,7 +40,6 @@ h1::after{
 }
 
 .btn{
-    background-color: var(--Text-color);
     color: var(--Hover-color);
 }
 
