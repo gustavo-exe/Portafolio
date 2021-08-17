@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./Css/header.css">
     <link rel="stylesheet" href="./Css/menuDesplegable.css">
     <link REL="StyleSheet" HREF="./Css/styles.css">
-    
+    <link rel="stylesheet" href="./css/tarjetas.css">
 
     
 </head>
@@ -54,8 +54,7 @@
             </div>
         </main>
     </div>
-    
-    <div id="AcercaDe" class="AcercaDe" >
+    <section id="AcercaDe" class="AcercaDe" >
         <h1>Acerca de mi</h1>
         <p>
             Mi curiosidad siempre me lleva a lugares que aún no exploro o probar con 
@@ -76,8 +75,42 @@
             y por mi cuenta me he dedicado al diseño.
         </p>
         
-    </div>
-    <div class="Herramientas" >
+    </section>
+    <section class="CosasQuePuedoHacer" >
+        <h1>Cosas que puedo hacer</h1>
+        <p>
+            Tipos de trabajo que podria hacer para ti.
+        </p>
+        <div class="ContenedorDeTarjetas" >
+            <div class="tarjeta">
+                <img src="https://img.icons8.com/color/96/000000/change-theme.png">
+                <h3>Desarrollo web</h3>
+                <p>Construccion y mantener sitios web.</p>
+            </div>
+            <div class="tarjeta">
+                <img src="https://img.icons8.com/fluency/96/000000/media-queries.png">
+                <h3>Responsive Design</h3>
+                <p>Creacion de paginas web que luscan bien en todos los dispositivos.</p>
+            </div>
+            <div class="tarjeta">
+                <img src="https://img.icons8.com/fluency/96/000000/web-design.png">
+                <h3>UX / UI</h3>
+                <p> Los aspectos de la experiencia del usuario en un sitio web. </p>
+            </div>
+            <div class="tarjeta">
+                <img src="https://img.icons8.com/fluency/96/000000/rgb-circle-1.png">
+                <h3>Graphic Design</h3>
+                <p>Logos, imagenes y assets. Contenido visual para mejorar la comunicacion del mensaje.
+                </p>
+            </div>
+            <div class="tarjeta">
+                <img src="https://img.icons8.com/color/96/000000/sale--v1.png">
+                <h3>Branding</h3>
+                <p>Es la construcción completa de una marca más allá de su logo.</p>
+            </div>
+        </div>
+    </section>
+    <section class="Herramientas" >
         <img src="./imgs/Herramientas.svg" alt="" srcset="">
             <div>
                 <h1>
@@ -89,8 +122,8 @@
                     sitios o aplicaciones web.
                 </p>
             </div>
-    </div>
-    <div class="Actividades" >
+    </section>
+    <section class="Actividades" >
         <div>
             <p >2021</p>
             <p >Asistente de<br> curso en EDteam</p>
@@ -102,13 +135,15 @@
             <p >Ahora</p>
             <p>Microsoft learn <br> student ambassador</p>
         </div>
-    </div>
+    </section>
+
     <footer class="justify-content-around d-flex flex-row p-3">
         Gustavo Elias Meza Matute © 2021
     </footer>
+    
+    <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="./javascript/HamburgerMenu.js" ></script>
     <script src="./javascript/RemoverMenuDesplegable.js"></script>
 </body>
-
 </html>
