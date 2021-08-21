@@ -2,18 +2,14 @@
     height: 0px;
 }
 
-main{
-    min-height: calc(100vh - 8rem);
-    display: flex;
-    align-items: center;
-}
-
 .Cover{
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    padding: 0rem 10rem 0rem 10rem;
+    min-height: calc(100vh - 8rem);
 }
 
 .AcercaDe,
@@ -95,6 +91,8 @@ h1::after{
 @media (min-width:1200px){
     .Nombre{
         font-size: 8rem;
+        word-wrap: break-word;
+        flex:1;
     }
 
     .AcercaDe, .Herramientas{
@@ -116,8 +114,13 @@ h1::after{
 @media only screen 
 and (min-width:767px)
 and (min-height:1024px){
+    .Cover{
+        padding: 0rem 3rem 0rem 3rem;
+    }
     .Nombre{
-        font-size: 7.5vw;
+        font-size: 10vw;
+        word-wrap: break-word;
+        flex:1;
     }
     .CuerpoCoverPage{
         min-height: auto;
@@ -135,6 +138,11 @@ and (min-height:1024px){
 and (min-width: 320px)
 and (max-width: 736px)
 {
+    .Cover{
+        padding: 0rem 0rem 0rem 0rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
     .Herramientas{
         flex-direction: column-reverse;
         align-items: center;
