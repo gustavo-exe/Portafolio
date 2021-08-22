@@ -111,9 +111,7 @@ h1::after{
     }
 }
 /*Tableta*/
-@media only screen 
-and (min-width:767px)
-and (min-height:1024px){
+@media only screen and (max-width: 959px){
     .Cover{
         padding: 0rem 3rem 0rem 3rem;
     }
@@ -134,14 +132,10 @@ and (min-height:1024px){
 }
 
 /*Movil*/
-@media only screen
-and (min-width: 320px)
-and (max-width: 736px)
+@media only screen and (max-width: 599px) 
 {
     .Cover{
-        padding: 0rem 0rem 0rem 0rem;
-        flex-wrap: nowrap;
-        flex-direction: column;
+        align-content: center;
     }
     .Herramientas{
         flex-direction: column-reverse;

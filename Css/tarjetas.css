@@ -1,3 +1,7 @@
+:root{
+    --ancho-tarjeta: 18rem;
+}
+
 .CosasQuePuedoHacer{
     background-color: var(--Text-color);
     display: flex;
@@ -13,7 +17,8 @@
     margin-top:2rem;
     width: 100%;
     display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(var(--ancho-tarjeta), 1fr));
+    align-items: center;
     /*
         Para cuando hay un elemento mas grande y pequeños se adapten
         en el espacio que queda vacio.
@@ -34,6 +39,7 @@
     box-shadow: 5px 5px 6px #1e1e1e,
                 -5px -5px 6px #222222;
                 padding: 1rem;
+    align-self: center;
 }
 
 .tarjeta img{
@@ -45,10 +51,11 @@
     color: var(--Text-color);
 }
 
-@media only screen
-and (min-width: 320px)
-and (max-width: 736px)
+@media only screen and (max-width: 599px)
 {
+    :root{
+        --ancho-tarjeta: 100%;
+    }
     .CosasQuePuedoHacer{
         padding: 3rem;
     }
