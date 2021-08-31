@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     min-height: calc(100vh - 6rem);
-    padding: 3rem;
+    padding: var(--md-padding);
     gap: 1rem;
 }
 
@@ -31,10 +31,11 @@
     grid-row: 3;
 }
 /*Movil*/
-@media only screen
-and (min-width: 320px)
-and (max-width: 736px)
+@media only screen and (max-width: 599px) 
 {
+    .Contactos{
+        padding: var(--xs-padding);
+    }
     .Texto{
         display:block;
     }
