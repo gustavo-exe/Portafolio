@@ -14,14 +14,6 @@
     margin-bottom: 4rem;
 }
 
-h1::after{
-    display: flex;
-    flex-direction: column;
-    content: '';
-    border-top: 4px solid var(--Enfasis-Color);
-    width: 10%;
-    color: var(--Enfasis-Color);
-}
 
 .Grid{
     display: flex;
@@ -93,9 +85,7 @@ h1::after{
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: inherit;
 }
-h2{
-    margin-bottom: 1rem;
-}
+
 
 /*Break points*/
 /*Movil*/

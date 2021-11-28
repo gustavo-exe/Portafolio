@@ -4,7 +4,7 @@
     --Text-color: #202020;
     --Hover-color: #f5f3ef;
     --Enfasis-Color: #FFD100;
-
+    --Gradiente-yellow:linear-gradient(63.44deg, #FFEE32 0%, #FFD100 100%);
     /*Padding*/
     --md-padding: 8rem 8rem 8rem 8rem;
     --xs-padding: 1rem 1rem 1rem 1rem;

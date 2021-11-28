@@ -1,0 +1,38 @@
+.Actividades{
+    align-items: center;
+}
+.Actividades div{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.Actividades p{
+    margin-bottom: 0;
+}
+
+.Actividades h1{
+    margin:2rem 0rem 2rem 0rem;
+    font-size: 12vw;
+}
+.Actividades div p:nth-child(1){
+    transform: rotate(90deg);
+    opacity: 70%;
+    margin-right: .2rem;
+}
+
+.actividades-actividad{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.actividades-actividad--right{
+    
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.actividades-actividad--left{
+    
+    align-items: flex-start;
+}
