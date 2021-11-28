@@ -2,15 +2,7 @@
     height: 0px;
 }
 
-.Cover{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0rem 10rem 0rem 10rem;
-    min-height: calc(100vh - 8rem);
-}
+
 
 .AcercaDe,
 .Herramientas,
@@ -89,16 +81,6 @@ h1::after{
 
 /*Ordenador*/
 @media (min-width:1200px){
-    .Nombre{
-        font-size: 8rem;
-        word-wrap: break-word;
-        flex:1;
-    }
-
-    .MiImagen
-    {
-        width: 30vw;
-    }
     .RedesSociales
     {
         font-size: 1vw;
@@ -119,17 +101,11 @@ h1::after{
     .Actividades{
         padding: var(--xs-padding);
     }
-    .Nombre{
-        font-size: 10vw;
-        word-wrap: break-word;
-        flex:1;
-    }
+
     .CuerpoCoverPage{
         min-height: auto;
     }
-    .MiImagen{
-        width: 30vw;
-    }
+    
     .Herramientas img{
         width:100%;
     }
@@ -157,16 +133,7 @@ h1::after{
     .Herramientas img{
         width: 100%;
     }
-    .Nombre{
-        font-size: 2rem;
-        text-align: center;
-        order: 2;
-        width: 100%;
-    }
-    .MiImagen{
-        width: 70vw;
-        order: 1;
-    }
+    
     .Actividades div{
         font-size: 1rem;
     }
