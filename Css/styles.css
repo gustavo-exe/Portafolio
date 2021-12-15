@@ -2,10 +2,8 @@
     height: 0px;
 }
 
-
-
 .AcercaDe,
-.Herramientas,
+.herramientas,
 .Actividades,
 .CosasQuePuedoHacer,
 .Actividades{
@@ -31,17 +29,6 @@
 .btn:active{
     background-color: var(--Enfasis-Color);
 }
-/*Herramientas*/
-.Herramientas{
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.Herramientas img{
-    width:40%;
-}
-
 
 /*Breakpoints*/
 
@@ -51,9 +38,6 @@
     {
         font-size: 1vw;
     }
-    .Herramientas h1{
-        font-size: 4rem;
-    }
 }
 /*Tableta*/
 @media only screen and (max-width: 959px){
@@ -61,7 +45,7 @@
         padding: 0rem 3rem 0rem 3rem;
     }
     .AcercaDe,
-    .Herramientas,
+    .herramientas,
     .Actividades,
     .CosasQuePuedoHacer,
     .Actividades{
@@ -72,9 +56,6 @@
         min-height: auto;
     }
     
-    .Herramientas img{
-        width:100%;
-    }
 }
 
 /*Movil*/
@@ -84,20 +65,11 @@
         align-content: center;
     }
     .AcercaDe,
-    .Herramientas,
+    .herramientas,
     .Actividades,
     .CosasQuePuedoHacer,
     .Actividades{
         padding: var(--xs-padding);
-    }
-    
-    .Herramientas{
-        flex-direction: column-reverse;
-        align-items: center;
-        padding-bottom: 4rem;
-    }
-    .Herramientas img{
-        width: 100%;
     }
     
     .Actividades div{
