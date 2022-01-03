@@ -3,9 +3,9 @@
 }
 
 .AcercaDe,
-.herramientas,
 .Actividades,
 .CosasQuePuedoHacer,
+.herramientas,
 .Actividades{
     padding: var(--md-padding);
     min-height: 100vh;
@@ -48,8 +48,9 @@
     .herramientas,
     .Actividades,
     .CosasQuePuedoHacer,
-    .Actividades{
-        padding: var(--xs-padding);
+    .Actividades,
+    .Proyectos{
+        padding: var(--xs-padding) !important;
     }
 
     .CuerpoCoverPage{
@@ -68,7 +69,8 @@
     .herramientas,
     .Actividades,
     .CosasQuePuedoHacer,
-    .Actividades{
+    .Actividades,
+    .Proyectos{
         padding: var(--xs-padding);
     }
     

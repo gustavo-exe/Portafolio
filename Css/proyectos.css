@@ -2,20 +2,16 @@
     --Dimensiones-Item: 22rem;
 }
 
-.Container{
-    min-height: calc(8rem - 100vh);
+.Proyectos{
     display: flex;
     padding: var(--md-padding);
-    padding-top: 6rem;
     flex-direction: column;
     justify-content: center;
-}
-.Container h1{
-    margin-bottom: 4rem;
+    margin: 4rem 0rem 4rem 0rem;
 }
 
 
-.Grid{
+.Proyectos-Grid{
     display: flex;
     align-items: center;
     justify-content: left;
@@ -30,14 +26,14 @@
     user-select: none;
 }
 
-.Item{
+.Proyectos-Item{
     min-width: var(--Dimensiones-Item);
     height: var(--Dimensiones-Item);
     position: relative;
     border-radius: var(--border-radius);
 }
 
-.Item img{
+.Proyectos-Item img{
     position: absolute;
     z-index: 0;
     width: 100%;
@@ -46,12 +42,12 @@
     border-radius: inherit; 
 }
 
-.Item .Descripcion{
+.Proyectos-Item .Proyectos-Item-Descripcion{
     transform: scale(0);
 }
 
 
-.Item:hover .Descripcion{
+.Proyectos-Item:hover .Proyectos-Item-Descripcion{
     transform: scale(1);
 }
 
@@ -69,7 +65,7 @@
 }
 
 
-.Item .Descripcion{
+.Proyectos-Item .Proyectos-Item-Descripcion{
     transition: transform 0.25s;
     padding: 1rem;
     display: flex;
@@ -94,13 +90,10 @@
     :root{
         --Dimensiones-Item: 15rem;
     }
-    .Container{
-        padding: var(--xs-padding);
-    }
-    .Item{
+    .Proyectos-Item{
         margin-bottom: 2rem;
     }
-    .Descripcion{
+    .Proyectos-Item-Descripcion{
         font-size: 0.8rem;
     }
-}
+    }
