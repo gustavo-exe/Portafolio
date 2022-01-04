@@ -1,0 +1,18 @@
+.BottomFooter{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 5rem;
+}
+
+.Contactos-grid{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.Contactos-item a img{
+    width: 1.5rem;
+}
