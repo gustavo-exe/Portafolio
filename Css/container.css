@@ -1,0 +1,18 @@
+.Container-compress{
+    align-self: center;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.Container-full{
+    width: 100%;
+}
+
+@media screen and (min-width:1280) {
+    .Container-compress{
+        max-width: 100%;
+    }
+    .Container-full{
+        width: 100%;
+    }
+}

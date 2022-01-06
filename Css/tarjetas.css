@@ -13,6 +13,10 @@
     padding:3rem 10rem 3rem 10rem;
 }
 
+.CosasQuePuedoHacer-container{
+    background-color: var(--Text-color);
+}
+
 .ContenedorDeTarjetas{
     margin-top:2rem;
     width: 100%;

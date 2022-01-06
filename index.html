@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./Css/normalize.css">
     <link rel="stylesheet" href="./Css/variables.css">
     <link rel="stylesheet" href="./Css/estilosGenerales.css">
+    <link rel="stylesheet" href="./Css/container.css">
     <link rel="stylesheet" href="./Css/header.css">
     <link rel="stylesheet" href="./Css/menuDesplegable.css">
     <link REL="StyleSheet" HREF="./Css/styles.css">
@@ -23,220 +24,225 @@
     <link rel="stylesheet" href="./Css/proyectos.css">
     <link rel="stylesheet" href="./Css/bottomFotter.css">
 </head>
-<body  >
-    <div class="CuerpoCoverPage">
-        <header >
-            <div class="LogoTexto"  >
-                <div class="Logo"></div>
-                <div class="Texto" >
-                    console.log("elias.js")
+<body>
+    <main>
+        <section class="CuerpoCoverPage Container-compress">
+            <header >
+                <div class="LogoTexto"  >
+                    <div class="Logo"></div>
+                    <div class="Texto" >
+                        console.log("elias.js")
+                    </div>
                 </div>
-            </div>
-            
-            <div class="Menu" >
-                <button id="Despliegue" class="Hamburguer btn" >
-                    <img id="Icono_De_Menu" src="./imgs/icons/menu_black_24dp.svg" alt="" srcset="">
-                </button>
-                <nav class="Lista" >
-                    <a href="#AcercaDe" >Acerca de Elias</a>
-                    <a href="./pages/proyectos.html" >Proyectos</a> 
-                    <a href="./pages/contacto.html" >Contacto</a>
-                </nav>
-            </div>
-        </header>
-        <div id="MenuDesplegable" class="MenuDesplegable" >
-            <a id="EnlaceMenuDesplegable" href="#AcercaDe" >Acerca de Elias</a>
-            <a href="./pages/proyectos.html" >Proyectos</a>
-            <a href="./pages/contacto.html" >Contacto</a>
-        </div>
-            
-        <section class="cover">
-            <div class="cover-texts" >
-                <p class="cover-nombre" >Soy <b>Gustavo Elias Meza</b></p>
-                <p class="cover-caption" >Soy desarrollador web, diseñador UI y estudiante.</p>
-            </div>
-            <img  src="./imgs/MiFotoConFondo.png" class="cover-miImagen" />
-        </section>
-    </div>
-    <section id="AcercaDe" class="AcercaDe" >
-        <h1>Acerca de Elias</h1>
-        <p>
-            Mi curiosidad siempre me lleva a lugares que aún no exploro o probar con 
-            alguna idea por lo cual me gusta arriesgarme y cuando es en equipo es mucho 
-            mejor porque se juntan diferentes mentes a crear un nuevo espacio. La tecnológica 
-            es un buen lugar para explorar, como desarrollador web mi objetivo es 
-            combinar el estilo de una identidad visual y hacerla funcional.
-        </p>
-        <p>
-            Tengo 22 años, Hondureño. En la actualidad, soy estudiante de Ingeniería en 
-            Ciencias de la Computación en la Universidad Católica de Honduras campus Jesús 
-            Sacramentado, antes obtuve un título de Bachillerato Técnico Profesional en Informática. 
-            Mi labor como estudiante aún no finaliza, porque soy parte de un programa de Becas en EDteam como 
-            asistente de curso el cual disfruto.
-        </p>
-        <p>
-            Desde los 10 años me intereso en la tecnología y mis estudios los he aprovechado para aprender programación 
-            y por mi cuenta me he dedicado al diseño.
-        </p>
-        
-    </section>
-    <section class="Actividades" >
-        <div class="actividades-actividad actividades-actividad--left" >
-            <div>
-                <p class="actividades-rotate" >2021</p>
-                <p >Asistente de<br> curso en EDteam</p>
-            </div>
-        </div>
-        
-        <h1>Actividades</h1>
-        
-        <div class=" actividades-actividad actividades-actividad--right" >
-            <div>
-                <p class="actividades-rotate" >Ahora</p>
-                <p>Microsoft learn <br> student ambassador</p>
-            </div>
-            <div>
-                <p class="actividades-rotate" >Ahora</p>
-                <p>Estudiante de Ingenieria <br> en Ciencias de la Computacion</p>
-            </div>
-        </div>
-    </section>
-    <section class="CosasQuePuedoHacer" >
-        <h1>Cosas que puedo hacer</h1>
-        <p>
-            Tipos de trabajo que podria hacer para ti.
-        </p>
-        <div class="ContenedorDeTarjetas" >
-            <div class="tarjeta">
-                <img src="https://img.icons8.com/color/96/000000/change-theme.png">
-                <h3>Desarrollo web</h3>
-                <p>Construccion y mantener sitios web.</p>
-            </div>
-            <div class="tarjeta">
-                <img src="https://img.icons8.com/fluency/96/000000/media-queries.png">
-                <h3>Responsive Design</h3>
-                <p>Creacion de paginas web que luscan bien en todos los dispositivos.</p>
-            </div>
-            <div class="tarjeta">
-                <img src="https://img.icons8.com/fluency/96/000000/web-design.png">
-                <h3>UX / UI</h3>
-                <p> Los aspectos de la experiencia del usuario en un sitio web. </p>
-            </div>
-            <div class="tarjeta">
-                <img src="https://img.icons8.com/fluency/96/000000/rgb-circle-1.png">
-                <h3>Graphic Design</h3>
-                <p>Logos, imagenes y assets. Contenido visual para mejorar la comunicacion del mensaje.
-                </p>
-            </div>
-            <div class="tarjeta">
-                <img src="https://img.icons8.com/color/96/000000/sale--v1.png">
-                <h3>Branding</h3>
-                <p>Es la construcción completa de una marca más allá de su logo.</p>
-            </div>
-        </div>
-    </section>
-    <section class="herramientas" >
-            <section class="herramientas-encabezado">
-                <h1>
-                    Herramientas
-                    que utilizo
-                </h1>
-                <p>
-                    Principales herraminetas que utilizo para diseñar, organizar tareas, construir paginas, 
-                    sitios o aplicaciones web.
-                </p>
-            </section>
-            <section class="herramientas-grid" >
-                <img alt="logo" src="./imgs/icons/tools/react.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/notion.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/microsoft.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/vs_code.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/js.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/figma.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/ubuntu.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/firefox.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/css_3.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/adobe_illustrator.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/MicrosoftOffice.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/Edge.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/html_5.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/adobe_photoshop.svg"></img>
-                <img alt="logo" src="./imgs/icons/tools/docker.svg"></img>
                 
+                <div class="Menu" >
+                    <button id="Despliegue" class="Hamburguer btn" >
+                        <img id="Icono_De_Menu" src="./imgs/icons/menu_black_24dp.svg" alt="" srcset="">
+                    </button>
+                    <nav class="Lista" >
+                        <a href="#AcercaDe" >Acerca de Elias</a>
+                        <a href="./pages/proyectos.html" >Proyectos</a> 
+                        <a href="./pages/contacto.html" >Contacto</a>
+                    </nav>
+                </div>
+            </header>
+            <div id="MenuDesplegable" class="MenuDesplegable" >
+                <a id="EnlaceMenuDesplegable" href="#AcercaDe" >Acerca de Elias</a>
+                <a href="./pages/proyectos.html" >Proyectos</a>
+                <a href="./pages/contacto.html" >Contacto</a>
+            </div>
+                
+            <section class="cover">
+                <div class="cover-texts" >
+                    <p class="cover-nombre" >Soy <b>Gustavo Elias Meza</b></p>
+                    <p class="cover-caption" >Soy desarrollador web, diseñador UI y estudiante.</p>
+                </div>
+                <img  src="./imgs/MiFotoConFondo.png" class="cover-miImagen" />
             </section>
-    </section>
-    
-    <section class="Proyectos">
-        <h1>
-            Proyectos
-        </h1>
-        <div class="Proyectos-Grid">
-            <div  class="Proyectos-Item"  >
-                <img id="Imagen" src="https://raw.githubusercontent.com/gustavo-exe/LoginApp/master/src/images/Mockup.jpg" alt="" srcset="">
-                <div  class="Proyectos-Item-Descripcion">
-                    <h2>LoginApp - ToDo List</h2>
-                        Dos en uno, un login simple sin necesidad de un registro previo se accede al ToDo List con almacenamiento de las tareas.
-                    <div>
-                        <button class="btn BotonPrimario" onclick="location.href='https://loginapp-177ba.web.app/'" >Demo</button>
-                        <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/LoginApp'" >Repositorio</button>
-                    </div>
+        </section>
+        <section id="AcercaDe" class="AcercaDe Container-full" >
+            <div class="AcercaDe Container-compress">
+                <h1>Acerca de Elias</h1>
+                <p>
+                    Mi curiosidad siempre me lleva a lugares que aún no exploro o probar con 
+                    alguna idea por lo cual me gusta arriesgarme y cuando es en equipo es mucho 
+                    mejor porque se juntan diferentes mentes a crear un nuevo espacio. La tecnológica 
+                    es un buen lugar para explorar, como desarrollador web mi objetivo es 
+                    combinar el estilo de una identidad visual y hacerla funcional.
+                </p>
+                <p>
+                    Tengo 22 años, Hondureño. En la actualidad, soy estudiante de Ingeniería en 
+                    Ciencias de la Computación en la Universidad Católica de Honduras campus Jesús 
+                    Sacramentado, antes obtuve un título de Bachillerato Técnico Profesional en Informática. 
+                    Mi labor como estudiante aún no finaliza, porque soy parte de un programa de Becas en EDteam como 
+                    asistente de curso el cual disfruto.
+                </p>
+                <p>
+                    Desde los 10 años me intereso en la tecnología y mis estudios los he aprovechado para aprender programación 
+                    y por mi cuenta me he dedicado al diseño.
+                </p>
+            </div>
+            
+        </section>
+        <section class="Actividades Container-compress" >
+            <div class="actividades-actividad actividades-actividad--left" >
+                <div>
+                    <p class="actividades-rotate" >2021</p>
+                    <p >Asistente de<br> curso en EDteam</p>
                 </div>
             </div>
-            <div class="Proyectos-Item">
-                <img src="../imgs/MockupPokemon.jpg" alt="" srcset="">
-                <div  class="Proyectos-Item-Descripcion">
-                    <h2>AR x Pokemon</h2>
-                        Es una pagina que contiene los diferentes tipos de realidad aumentada en AR.js con un plus de Model Viewer.
-                    <div>
-                        <button class="btn BotonPrimario" onclick="location.href='https://gustavo-exe.github.io/ArJsPokemon/'" >Demo</button>
-                        <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/ArJsPokemon'" >Repositorio</button>
-                    </div>
+            
+            <h1>Actividades</h1>
+            
+            <div class=" actividades-actividad actividades-actividad--right" >
+                <div>
+                    <p class="actividades-rotate" >Ahora</p>
+                    <p>Microsoft learn <br> student ambassador</p>
                 </div>
-            </div>
-            <div class="Proyectos-Item">
-                <img src="https://raw.githubusercontent.com/gustavo-exe/LouvreLandingPage/master/imgs/MockupLouvre.jpg" alt="" srcset="">
-                <div  class="Proyectos-Item-Descripcion">
-                    <h2>Louvre Landing Page</h2>
-                    Página inspirada en un museo, patrocinando uno de los eventos.
-                    <div>
-                        <button class="btn BotonPrimario" onclick="location.href='https://gustavo-exe.github.io/LouvreLandingPage/'" >Demo</button>
-                        <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/LouvreLandingPage'" >Repositorio</button>
-                    </div>
-                </div>
-            </div>
-        </div>            
-    </section>
-
-    
-
-    <footer class="BottomFooter">
-        Gustavo Elias Meza Matute © 2021
-        <section class="BottomFooter-Contactos" >
-            <div class="Contactos-grid" >
-                <div class="Contactos-item">
-                    <a href="https://github.com/gustavo-exe">
-                        <img src="../imgs/icons/github.svg">
-                    </a>
-                </div>
-                <div class="Contactos-item">
-                    <a href="https://www.instagram.com/gustavoelias.exe/">
-                        <img src="../imgs/icons/instagram.svg">
-                    </a>
-                </div>
-                <div class="Contactos-item">
-                    <a href="https://twitter.com/GustavoDevelop">
-                        <img src="../imgs/icons/twitter.svg">
-                    </a>
-                </div>
-                <div class="Contactos-item">
-                    <a href="https://www.linkedin.com/in/gustavo-meza-develop/">
-                        <img src="../imgs/icons/linkedin.svg">
-                    </a>
+                <div>
+                    <p class="actividades-rotate" >Ahora</p>
+                    <p>Estudiante de Ingenieria <br> en Ciencias de la Computacion</p>
                 </div>
             </div>
         </section>
-    </footer>
-    
+        
+        <section class="CosasQuePuedoHacer-container Container-full" >
+            <div class="CosasQuePuedoHacer Container-compress" >
+                
+                    <h1>Cosas que puedo hacer</h1>
+                    <p>
+                        Tipos de trabajo que podria hacer para ti.
+                    </p>
+                    <div class="ContenedorDeTarjetas" >
+                        <div class="tarjeta">
+                            <img src="https://img.icons8.com/color/96/000000/change-theme.png">
+                            <h3>Desarrollo web</h3>
+                            <p>Construccion y mantener sitios web.</p>
+                        </div>
+                        <div class="tarjeta">
+                            <img src="https://img.icons8.com/fluency/96/000000/media-queries.png">
+                            <h3>Responsive Design</h3>
+                            <p>Creacion de paginas web que luscan bien en todos los dispositivos.</p>
+                        </div>
+                        <div class="tarjeta">
+                            <img src="https://img.icons8.com/fluency/96/000000/web-design.png">
+                            <h3>UX / UI</h3>
+                            <p> Los aspectos de la experiencia del usuario en un sitio web. </p>
+                        </div>
+                        <div class="tarjeta">
+                            <img src="https://img.icons8.com/fluency/96/000000/rgb-circle-1.png">
+                            <h3>Graphic Design</h3>
+                            <p>Logos, imagenes y assets. Contenido visual para mejorar la comunicacion del mensaje.
+                            </p>
+                        </div>
+                        <div class="tarjeta">
+                            <img src="https://img.icons8.com/color/96/000000/sale--v1.png">
+                            <h3>Branding</h3>
+                            <p>Es la construcción completa de una marca más allá de su logo.</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </section>
+
+        <section class="herramientas Container-compress" >
+                <section class="herramientas-encabezado">
+                    <h1>
+                        Herramientas
+                        que utilizo
+                    </h1>
+                    <p>
+                        Principales herraminetas que utilizo para diseñar, organizar tareas, construir paginas, 
+                        sitios o aplicaciones web.
+                    </p>
+                </section>
+                <section class="herramientas-grid" >
+                    <img alt="logo" src="./imgs/icons/tools/react.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/notion.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/microsoft.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/vs_code.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/js.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/figma.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/ubuntu.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/firefox.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/css_3.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/adobe_illustrator.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/MicrosoftOffice.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/Edge.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/html_5.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/adobe_photoshop.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/docker.svg"></img>
+                    
+                </section>
+        </section>
+        <section class="Proyectos Container-compress">
+            <h1>
+                Proyectos
+            </h1>
+            <div class="Proyectos-Grid">
+                <div  class="Proyectos-Item"  >
+                    <img id="Imagen" src="https://raw.githubusercontent.com/gustavo-exe/LoginApp/master/src/images/Mockup.jpg" alt="" srcset="">
+                    <div  class="Proyectos-Item-Descripcion">
+                        <h2>LoginApp - ToDo List</h2>
+                            Dos en uno, un login simple sin necesidad de un registro previo se accede al ToDo List con almacenamiento de las tareas.
+                        <div>
+                            <button class="btn BotonPrimario" onclick="location.href='https://loginapp-177ba.web.app/'" >Demo</button>
+                            <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/LoginApp'" >Repositorio</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Proyectos-Item">
+                    <img src="../imgs/MockupPokemon.jpg" alt="" srcset="">
+                    <div  class="Proyectos-Item-Descripcion">
+                        <h2>AR x Pokemon</h2>
+                            Es una pagina que contiene los diferentes tipos de realidad aumentada en AR.js con un plus de Model Viewer.
+                        <div>
+                            <button class="btn BotonPrimario" onclick="location.href='https://gustavo-exe.github.io/ArJsPokemon/'" >Demo</button>
+                            <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/ArJsPokemon'" >Repositorio</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Proyectos-Item">
+                    <img src="https://raw.githubusercontent.com/gustavo-exe/LouvreLandingPage/master/imgs/MockupLouvre.jpg" alt="" srcset="">
+                    <div  class="Proyectos-Item-Descripcion">
+                        <h2>Louvre Landing Page</h2>
+                        Página inspirada en un museo, patrocinando uno de los eventos.
+                        <div>
+                            <button class="btn BotonPrimario" onclick="location.href='https://gustavo-exe.github.io/LouvreLandingPage/'" >Demo</button>
+                            <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/LouvreLandingPage'" >Repositorio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <footer class="BottomFooter Container-compress">
+            Gustavo Elias Meza Matute © 2021
+            <section class="BottomFooter-Contactos" >
+                <div class="Contactos-grid" >
+                    <div class="Contactos-item">
+                        <a href="https://github.com/gustavo-exe">
+                            <img src="../imgs/icons/github.svg">
+                        </a>
+                    </div>
+                    <div class="Contactos-item">
+                        <a href="https://www.instagram.com/gustavoelias.exe/">
+                            <img src="../imgs/icons/instagram.svg">
+                        </a>
+                    </div>
+                    <div class="Contactos-item">
+                        <a href="https://twitter.com/GustavoDevelop">
+                            <img src="../imgs/icons/twitter.svg">
+                        </a>
+                    </div>
+                    <div class="Contactos-item">
+                        <a href="https://www.linkedin.com/in/gustavo-meza-develop/">
+                            <img src="../imgs/icons/linkedin.svg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
     <!--Scripts-->
     <script src="./javascript/HamburgerMenu.js" ></script>
     <script src="./javascript/RemoverMenuDesplegable.js"></script>

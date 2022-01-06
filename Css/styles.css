@@ -17,9 +17,11 @@
     background: var(--Gradiente-yellow);
 }
 
-
 .AcercaDe p:nth-of-type(1){
     font-weight: bold;
+}
+.AcercaDe:nth-child(1){
+    background: transparent;
 }
 
 .btn{
