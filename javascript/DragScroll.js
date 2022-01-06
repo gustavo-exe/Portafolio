@@ -1,4 +1,4 @@
-const slider = document.querySelector('.Grid');
+const slider = document.querySelector('.Proyectos-Grid');
 let isDown = false;
 let startx;
 let scrolLeft;
