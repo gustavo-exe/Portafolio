@@ -10,9 +10,9 @@
 
 @media screen and (min-width:1280) {
     .Container-compress{
-        max-width: 100%;
+        max-width: auto;
     }
     .Container-full{
-        width: 100%;
+        width: auto;
     }
 }

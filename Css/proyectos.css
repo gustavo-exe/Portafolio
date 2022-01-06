@@ -7,10 +7,11 @@
     padding: var(--md-padding);
     flex-direction: column;
     justify-content: center;
-    padding-top: 0;
-    padding-bottom: 0;
+    
 }
-
+.Proyectos-container{
+    background-color: var(--Bg-spanish-gray);
+}
 
 .Proyectos-Grid{
     display: flex;
