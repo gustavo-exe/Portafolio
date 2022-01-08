@@ -52,11 +52,19 @@ a:nth-child(1)::before{
 }
 
 a:nth-child(2)::before{
-    background-image: url('https://img.icons8.com/ios-filled/30/ffffff/windows10-personalization.png');
+    background-image: url('https://img.icons8.com/fluency-systems-filled/30/ffffff/contact-card.png');
 }
 
 a:nth-child(3)::before{
-    background-image: url('https://img.icons8.com/fluency-systems-filled/30/ffffff/contact-card.png');
+    background-image: url('https://img.icons8.com/ios-filled/30/ffffff/windows10-personalization.png');
+}
+
+a:nth-child(4)::before{
+    background-image: url('https://img.icons8.com/external-kiranshastry-solid-kiranshastry/30/ffffff/external-tools-automobile-kiranshastry-solid-kiranshastry.png');
+}
+
+a:nth-child(5)::before{
+    background-image: url('https://img.icons8.com/ios-filled/30/ffffff/group-of-projects.png');
 }
 
 /*Movil*/
