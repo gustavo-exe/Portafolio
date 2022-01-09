@@ -37,7 +37,7 @@
                 
                 <div class="Menu" >
                     <button id="Despliegue" class="Hamburguer btn" >
-                        <img id="Icono_De_Menu" src="./imgs/icons/menu_black_24dp.svg" alt="" srcset="">
+                        <img id="Icono_De_Menu" src="./imgs/icons/menu_black_24dp.svg" alt="Icono de hamburgesa" >
                     </button>
                     <nav class="Lista" >
                         <a href="#AcercaDe" >Acerca de Elias</a>
@@ -59,9 +59,9 @@
             <section class="cover">
                 <div class="cover-texts" >
                     <p class="cover-nombre" >Soy <b>Gustavo Elias Meza</b></p>
-                    <p class="cover-caption" >Soy desarrollador web, diseñador UI y estudiante.</p>
+                    <p class="cover-caption" >Desarrollador web, diseñador UI y estudiante.</p>
                 </div>
-                <img  src="./imgs/MiFotoConFondo.png" class="cover-miImagen" />
+                <img  src="./imgs/MiFotoConFondo.png" class="cover-miImagen" alt="Foto de perfil"/>
             </section>
         </section>
         <section id="AcercaDe" class="AcercaDe Container-full" >
@@ -119,28 +119,28 @@
                     </p>
                     <div class="ContenedorDeTarjetas" >
                         <div class="tarjeta">
-                            <img src="https://img.icons8.com/color/96/000000/change-theme.png">
+                            <img src="https://img.icons8.com/color/96/000000/change-theme.png" alt="Desarrollo web">
                             <h3>Desarrollo web</h3>
                             <p>Construccion y mantener sitios web.</p>
                         </div>
                         <div class="tarjeta">
-                            <img src="https://img.icons8.com/fluency/96/000000/media-queries.png">
+                            <img src="https://img.icons8.com/fluency/96/000000/media-queries.png" alt="Responsive" >
                             <h3>Responsive Design</h3>
                             <p>Creacion de paginas web que luscan bien en todos los dispositivos.</p>
                         </div>
                         <div class="tarjeta">
-                            <img src="https://img.icons8.com/fluency/96/000000/web-design.png">
+                            <img src="https://img.icons8.com/fluency/96/000000/web-design.png" alt="UX/UI">
                             <h3>UX / UI</h3>
                             <p> Los aspectos de la experiencia del usuario en un sitio web. </p>
                         </div>
                         <div class="tarjeta">
-                            <img src="https://img.icons8.com/fluency/96/000000/rgb-circle-1.png">
+                            <img src="https://img.icons8.com/fluency/96/000000/rgb-circle-1.png" alt="Graphic design">
                             <h3>Graphic Design</h3>
                             <p>Logos, imagenes y assets. Contenido visual para mejorar la comunicacion del mensaje.
                             </p>
                         </div>
                         <div class="tarjeta">
-                            <img src="https://img.icons8.com/color/96/000000/sale--v1.png">
+                            <img src="https://img.icons8.com/color/96/000000/sale--v1.png"  alt="Branding">
                             <h3>Branding</h3>
                             <p>Es la construcción completa de una marca más allá de su logo.</p>
                         </div>
@@ -168,7 +168,7 @@
                     <img alt="logo" src="./imgs/icons/tools/js.svg"></img>
                     <img alt="logo" src="./imgs/icons/tools/figma.svg"></img>
                     <img alt="logo" src="./imgs/icons/tools/ubuntu.svg"></img>
-                    <img alt="logo" src="./imgs/icons/tools/firefox.svg"></img>
+                    <img alt="logo" src="./imgs/icons/tools/Azure.svg"></img>
                     <img alt="logo" src="./imgs/icons/tools/css_3.svg"></img>
                     <img alt="logo" src="./imgs/icons/tools/adobe_illustrator.svg"></img>
                     <img alt="logo" src="./imgs/icons/tools/MicrosoftOffice.svg"></img>
@@ -185,8 +185,18 @@
                     Proyectos
                 </h1>
                 <div class="Proyectos-Grid">
-                    <div  class="Proyectos-Item"  >
-                        <img id="Imagen" src="https://raw.githubusercontent.com/gustavo-exe/LoginApp/master/src/images/Mockup.jpg" alt="" srcset="">
+                    <article  class="Proyectos-Item"  >
+                        <img src="./imgs/MockupFaceAnalizer.jpg" alt="Face analizer" srcset="">
+                        <div  class="Proyectos-Item-Descripcion">
+                            <h2>Face Analizer</h2>
+                                Es una single page application que permite acceder Cognitive Service API Face de Azure. Fue contruida de demo para mi primer evento como Microsoft Learn Student Ambassador.
+                            <div>
+                                <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/FaceAnalizer'" >Repositorio</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article  class="Proyectos-Item"  >
+                        <img src="https://raw.githubusercontent.com/gustavo-exe/LoginApp/master/src/images/Mockup.jpg" alt="Mockup ToDo" srcset="">
                         <div  class="Proyectos-Item-Descripcion">
                             <h2>LoginApp - ToDo List</h2>
                                 Dos en uno, un login simple sin necesidad de un registro previo se accede al ToDo List con almacenamiento de las tareas.
@@ -195,9 +205,9 @@
                                 <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/LoginApp'" >Repositorio</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="Proyectos-Item">
-                        <img src="../imgs/MockupPokemon.jpg" alt="" srcset="">
+                    </article>
+                    <article class="Proyectos-Item">
+                        <img src="../imgs/MockupPokemon.jpg" alt="Mockup pokemon" srcset="">
                         <div  class="Proyectos-Item-Descripcion">
                             <h2>AR x Pokemon</h2>
                                 Es una pagina que contiene los diferentes tipos de realidad aumentada en AR.js con un plus de Model Viewer.
@@ -206,9 +216,9 @@
                                 <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/ArJsPokemon'" >Repositorio</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="Proyectos-Item">
-                        <img src="https://raw.githubusercontent.com/gustavo-exe/LouvreLandingPage/master/imgs/MockupLouvre.jpg" alt="" srcset="">
+                    </article>
+                    <article class="Proyectos-Item">
+                        <img src="https://raw.githubusercontent.com/gustavo-exe/LouvreLandingPage/master/imgs/MockupLouvre.jpg" alt="Mockup Louvre" srcset="">
                         <div  class="Proyectos-Item-Descripcion">
                             <h2>Louvre Landing Page</h2>
                             Página inspirada en un museo, patrocinando uno de los eventos.
@@ -217,37 +227,37 @@
                                 <button class="btn BotonSecundario" onclick="location.href='https://github.com/gustavo-exe/LouvreLandingPage'" >Repositorio</button>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>            
             </div>
         </section>
 
         <footer class="BottomFooter Container-compress">
-            Gustavo Elias Meza Matute © 2021
             <section class="BottomFooter-Contactos" >
                 <div class="Contactos-grid" >
                     <div class="Contactos-item">
                         <a href="https://github.com/gustavo-exe">
-                            <img src="../imgs/icons/github.svg">
+                            <img src="../imgs/icons/github.svg" alt="GitHub">
                         </a>
                     </div>
                     <div class="Contactos-item">
                         <a href="https://www.instagram.com/gustavoelias.exe/">
-                            <img src="../imgs/icons/instagram.svg">
+                            <img src="../imgs/icons/instagram.svg" alt="Instagram">
                         </a>
                     </div>
                     <div class="Contactos-item">
                         <a href="https://twitter.com/GustavoDevelop">
-                            <img src="../imgs/icons/twitter.svg">
+                            <img src="../imgs/icons/twitter.svg" alt="Twitter">
                         </a>
                     </div>
                     <div class="Contactos-item">
                         <a href="https://www.linkedin.com/in/gustavo-meza-develop/">
-                            <img src="../imgs/icons/linkedin.svg">
+                            <img src="../imgs/icons/linkedin.svg" alt="LinkedIn" >
                         </a>
                     </div>
                 </div>
             </section>
+            Gustavo Elias Meza Matute © 2021
         </footer>
     </main>
     <!--Scripts-->
