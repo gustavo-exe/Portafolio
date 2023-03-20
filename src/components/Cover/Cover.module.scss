@@ -1,0 +1,68 @@
+@import '../../styles/breakpoints.scss';
+
+.cover{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    
+    @include media-breakpoint("xs"){
+        flex-direction: column;
+    }
+
+    height: calc(100vh - 80px);
+}
+.coverTexts{
+    flex: 1;
+    @include media-breakpoint("xs"){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    position: relative;
+}
+
+.coverTexts::before{
+    content: '¡Hola!';
+    font-size: 12rem;
+    @include media-breakpoint("xs"){
+        font-size: 8rem;
+    }
+    position: absolute;
+    transform: translateY(-30%);
+    z-index: 4;
+    opacity: 10%;
+}
+.coverNombre{
+    font-size: 2.5rem;
+    word-wrap: break-word;
+    flex:1;
+    @include media-breakpoint("xs"){
+        flex: none;
+    }
+    z-index: 4;
+}
+.coverCaption{
+    font-size: 1rem;
+}
+.coverMiImagen{
+    width: 20rem;
+    order: 1;
+}
+
+@media only screen and (max-width: 500px) {
+    .coverTexts::before{
+        font-size: 6rem;
+        transform: translateY(0%);
+    }
+}
+
+.coverImage{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../../public/myimagenes/imagen-con-gorro.svg');
+}
