@@ -1,4 +1,4 @@
-import { Cover } from "@/components/Cover/Cover";
+import { Cover } from "@/pages/portafolio/Cover/Cover";
 import { NavBar } from "@/components/NavBar/NavBar";
 
 

@@ -1,5 +1,5 @@
-@import '../../styles/breakpoints.scss';
-@import '../../styles/variables.scss';
+@import '../../../styles/breakpoints.scss';
+@import '../../../styles/variables.scss';
 
 .cover{
     display: flex;
@@ -68,7 +68,7 @@
    
     background-position: center;
     background-size: cover;
-    background-image: url('../../../public/myimagenes/imagen-con-gorro.svg');
+    background-image: url('../../../../public/myimagenes/imagen-con-gorro.svg');
 }
 
 //DRAG
