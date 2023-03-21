@@ -15,7 +15,7 @@ export const NavBar = () => {
 
             </div>
 
-            <div  >
+            <div className={styles.nav} >
                 <nav className="flex gap-2" >
                     <a href="#AcercaDe" >Acerca de Elias</a>
                     <a href="#Actividades" >Actividades</a>

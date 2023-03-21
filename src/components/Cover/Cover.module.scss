@@ -1,4 +1,5 @@
 @import '../../styles/breakpoints.scss';
+@import '../../styles/variables.scss';
 
 .cover{
     display: flex;
@@ -19,6 +20,7 @@
         justify-content: center;
         flex-direction: column;
     }
+    padding: 0px 16px 0px 16px;
     position: relative;
 }
 
@@ -46,6 +48,7 @@
     font-size: 1rem;
 }
 .coverMiImagen{
+    position: relative;
     width: 20rem;
     order: 1;
 }
@@ -62,7 +65,54 @@
     height: calc(100vh - 80px);
     background-repeat: no-repeat;
     flex: 1;
+   
     background-position: center;
     background-size: cover;
     background-image: url('../../../public/myimagenes/imagen-con-gorro.svg');
+}
+
+//DRAG
+.containerBox{
+    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .box {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+
+.DragWidget{
+
+    display: flex;
+    background-color: $bg-dark-yet;
+    color: $white;
+    flex-direction: column;
+    width: 20rem;
+    cursor:grab;
+}
+
+.cuadrado{
+    width: 8px;
+    height: 8px;
+    background-color: $bg-variant-gray;
+}
+
+.header{
+    padding: 4px 8px 4px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido{
+    background-color: $secondary-color;
+    color: $text-color;
+    text-align: center;
+    padding: 1rem;
+    margin: 4px;
 }

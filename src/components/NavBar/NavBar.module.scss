@@ -1,7 +1,16 @@
+@import '../../styles/breakpoints.scss';
+
 .logo{
     width: 4rem;
     height: 4rem;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../../../public/mybrand/logo-black.svg');
+}
+
+.nav{
+    @include media-breakpoint('gt-sm'){
+        display: block;
+    }
+    display: none;
 }
