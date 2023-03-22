@@ -9,7 +9,7 @@ import { Contact } from "./portafolio/Contact/Contact";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <NavBar/>
       
       <Cover/>
@@ -19,6 +19,6 @@ export default function Home() {
       <Contact/>
 
       <Footer/>
-    </>
+    </div>
   )
 }
