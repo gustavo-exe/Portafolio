@@ -1,0 +1,34 @@
+.imageContact{
+    width: 40rem;
+    min-height: 22rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../public/myimagenes/imagen-contacto.svg');
+}
+
+.Instagram, .linkedin, .twitter, .github, .email {
+  width: 24px;
+  height: 24px;
+}
+
+.Instagram{
+    background-image: url('../../../../public/contact/Instagram.svg');
+}
+
+.linkedin{
+    background-image: url('../../../../public/contact/linkedin.svg');
+}
+
+.twitter{
+    background-image: url('../../../../public/contact/Twitter.svg');
+}
+
+.github{
+    background-image: url('../../../../public/contact/GitHub.svg');
+}
+
+.email{
+    background-image: url('../../../../public/contact/Email.svg');
+}
+
