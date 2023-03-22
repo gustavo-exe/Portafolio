@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="es">
       <Head >
       <script src="https://cdn.tailwindcss.com"></script>
-       <title>Gustavo Elias</title>
       </Head>
       <body>
         <Main />
