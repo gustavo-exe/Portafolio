@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+.container-layout{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.full-width-layout{
+    max-width: 100vw;
+}
+
+body{
+    background-color: $bg-color;
+}
+  

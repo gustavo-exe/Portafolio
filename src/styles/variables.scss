@@ -1,0 +1,43 @@
+/*Colores*/
+$bg-color: #d6d6d6;
+$text-color: #202020;
+$hover-color: #f5f3ef;
+
+$primary-color: #FFD100;
+$secondary-color: #FFEE32;
+
+$bg-variant-gray: #969696;
+$gradiente-yellow: linear-gradient(63.44deg, #FFEE32 0%, #FFD100 100%);
+
+/*Padding*/
+$md-padding: 8rem 8rem 8rem 8rem;
+$xs-padding: 1rem 1rem 1rem 1rem;
+
+/*Border radius*/
+$border-radius: 14px;
+
+
+$bg-dark-yet: #333533;
+
+
+$white: #ffffff;
+
+.gradient-yellow{
+    background: $gradiente-yellow;
+}
+
+.bg-dark-yet{
+    background-color: $bg-dark-yet;
+}
+
+.color-white{
+    color: $white;
+}
+
+.bg-dark-eerie{
+    background-color: $text-color;
+}
+
+.bg-variant{
+    background-color: $bg-variant-gray;
+}
