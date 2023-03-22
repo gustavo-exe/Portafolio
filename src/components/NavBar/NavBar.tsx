@@ -19,8 +19,7 @@ export const NavBar = () => {
                 <nav className="flex gap-2" >
                     <a href="#AcercaDe" >Acerca de Elias</a>
                     <a href="#Actividades" >Actividades</a>
-                    <a href="#CosasQuePuedoHacer" >I can do</a>
-                    <a href="#Herramientas" >Herramientas</a>
+                    <a href="#iCan" >I can do and tools</a>
                     <a href="#Proyectos" >Proyectos</a>
                 </nav>
             </div>

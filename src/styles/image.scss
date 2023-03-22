@@ -1,0 +1,14 @@
+.thumbnail{
+
+    width: 64px;
+    height: 64px;
+}
+
+$numero-thumbnails: 16;
+
+@for $i from 1 through $numero-thumbnails {
+    
+  .thumbnail-#{$i} {
+    background-image: url('../../public/tools-svg/#{$i}.svg');
+  }
+}
