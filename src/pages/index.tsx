@@ -1,10 +1,11 @@
-import { Cover } from "@/pages/portafolio/Cover/Cover";
-import { NavBar } from "@/components/NavBar/NavBar";
-import { About } from "./portafolio/About/About";
-import { Actividades } from "./portafolio/Actividades/Actividades";
 import { Footer } from "@/components/Footer/Footer";
-import { IcanAndTools } from "./portafolio/ICanAndTools/IcanAndTools";
-import { Contact } from "./portafolio/Contact/Contact";
+import { NavBar } from "@/components/NavBar/NavBar";
+import { About } from "@/sections/portafolio/About/About";
+import { Actividades } from "@/sections/portafolio/Actividades/Actividades";
+import { Contact } from "@/sections/portafolio/Contact/Contact";
+import { Cover } from "@/sections/portafolio/Cover/Cover";
+import { IcanAndTools } from "@/sections/portafolio/ICanAndTools/IcanAndTools";
+
 
 
 export default function Home() {
