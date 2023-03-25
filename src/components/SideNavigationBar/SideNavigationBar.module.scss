@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+.side{
+    width: 80vw;
+    bottom: 0;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    left: 0;
+}
+
+.bubbleBig{
+    height: 130px;
+    width: 130px;
+}
+
+.bubbleSmall{
+    height: 100px;
+    width: 100px;
+}
+
+.bubbleMedium{
+    height: 110px;
+    width: 110px;
+}
+
+.bubbleBig , .bubbleSmall, .bubbleMedium{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: $gradiente-yellow ;
+}
