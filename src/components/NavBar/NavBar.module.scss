@@ -14,3 +14,27 @@
     }
     display: none;
 }
+
+.side{
+    @include media-breakpoint('gt-sm'){
+        display: none;
+    }
+    display: block;
+}
+
+.burguerMenu{
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.open{
+    background-image: url('../../../public/icon/hamburguer-menu.svg');
+}
+
+.close{
+    background-image: url('../../../public/icon/close.svg') ;
+}

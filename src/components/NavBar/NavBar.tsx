@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { SideNavigationBar } from '../SideNavigationBar/SideNavigationBar';
 
 import styles from './NavBar.module.scss';
 
 export const NavBar = () => {
+
+    
+    const [isOpenSide, setOpenSide] = useState(false);
 
     return (
 
@@ -21,8 +25,20 @@ export const NavBar = () => {
                     <a href="#Actividades" >Actividades</a>
                     <a href="#iCan" >I can do and tools</a>
                     <a href="#Proyectos" >Proyectos</a>
+                    <a href="#contact" >Contacto</a>
                 </nav>
             </div>
+
+            <section  className={styles.side} >
+                <div className={styles.burguerMenu + ' cursor-pointer ' + ` ${isOpenSide ? styles.close : styles.open}  ` } onClick={()=>{setOpenSide(!isOpenSide)}}  >
+
+                </div>
+                
+                {
+                    isOpenSide && <SideNavigationBar onChildEvent={()=>{setOpenSide(!isOpenSide)}} />
+                }
+            </section>
+
         </div>
 
     )
