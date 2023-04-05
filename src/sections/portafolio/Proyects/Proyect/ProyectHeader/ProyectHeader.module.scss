@@ -1,0 +1,20 @@
+.logo{
+    width: 164px;
+    height: 164px;
+    background-color: white;
+    border-radius: 8px ;
+}
+
+.github, .web{
+    width: 24px;
+    background-size: 24px 24px;
+    height: 24px;
+}
+
+.github{
+    background-image: url('../../../../../../public/contact/GitHub.svg');
+}
+
+.web{
+    background-image: url('../../../../../../public/contact/Web.svg');
+}

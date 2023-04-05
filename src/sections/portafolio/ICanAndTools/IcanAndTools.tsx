@@ -10,7 +10,7 @@ export const IcanAndTools = () =>{
         'UI - UX (sometimes)'
     ]
 
-    const thumbnails = Array.from({ length: 16 }, (_, i) => i + 1);
+    const thumbnails = Array.from({ length: 17 }, (_, i) => i + 1);
 
     return(
         <div  id="iCan" className="bg-dark-yet color-white" >
