@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SideNavigationBar } from '../SideNavigationBar/SideNavigationBar';
-
+import { Link } from "react-scroll";
 import styles from './NavBar.module.scss';
 
 export const NavBar = () => {
@@ -21,11 +21,11 @@ export const NavBar = () => {
 
             <div className={styles.nav} >
                 <nav className="flex gap-2" >
-                    <a href="#AcercaDe" >Acerca de Elias</a>
-                    <a href="#Actividades" >Actividades</a>
-                    <a href="#iCan" >I can do and tools</a>
-                    <a href="#Proyectos" >Proyectos</a>
-                    <a href="#contact" >Contacto</a>
+                    <Link  className="cursor-pointer"  to="AcercaDe" smooth={true} >Elias' overview</Link>
+                    <Link  className="cursor-pointer"  to="Actividades" smooth={true} >Actividades</Link>
+                    <Link  className="cursor-pointer"  to="iCan" smooth={true} >Skills & tools</Link>
+                    <Link  className="cursor-pointer"  to="Proyects" smooth={true} >Proyectos</Link>
+                    <Link  className="cursor-pointer"  to="contact" smooth={true} >Contacto</Link>
                 </nav>
             </div>
 
