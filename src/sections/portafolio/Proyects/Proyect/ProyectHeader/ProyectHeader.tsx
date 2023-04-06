@@ -1,7 +1,8 @@
+import { ProyectHeaderInterface } from "./ProyectHeader.interface";
 import  style  from "./ProyectHeader.module.scss";
 import Image from 'next/image'
 
-export const ProyectHeader = () =>{
+export const ProyectHeader = ({ proyectHeader }: { proyectHeader: ProyectHeaderInterface }) =>{
     return (
         <section  className="flex flex-col" >
 
@@ -11,8 +12,8 @@ export const ProyectHeader = () =>{
                     <div  className="absolute w-full h-full" >
 
                         <Image
-                            src="https://user-images.githubusercontent.com/61214852/118196015-8391ae00-b409-11eb-9cbc-a40b9bae3aa5.png"
-                            alt="Pokemon x AR"
+                            src={proyectHeader.logo}
+                            alt={proyectHeader.nombre}
                             layout="fill"
                             objectFit="cover"
                         />
@@ -22,42 +23,41 @@ export const ProyectHeader = () =>{
             </div>
 
             <div   >
-                <div  className="text-2xl font-bold flex-1 " >Pokemon x AR</div>
+                <div  className="text-2xl font-bold flex-1 " >{proyectHeader.nombre}</div>
                 
                 <div>
                     <div className="mt-2 mb-2 flex gap-2 " >
-                        <a href="https://github.com/gustavo-exe/ArJsPokemon" target="_blank" rel="noopener noreferrer">
+                        <a href={proyectHeader.repositorio} target="_blank" rel="noopener noreferrer">
                             <div  className={style.github} ></div>
                         </a>
                         
-                        <a href="https://gustavo-exe.github.io/ArJsPokemon/" target="_blank" rel="noopener noreferrer">
+                        <a href={proyectHeader.publictSite} target="_blank" rel="noopener noreferrer">
                             <div  className={style.web} ></div>
                         </a>
+
                         <div className="border-r  border-r-black" ></div>
-                        <div className={`thumbnail-xs thumbnail-2`}></div>
-                        <div className={`thumbnail-xs thumbnail-4`}></div>
-                        <div className={`thumbnail-xs thumbnail-11`}></div>
-                        <div className={`thumbnail-xs thumbnail-17`}></div>
+                        
+                        {
+                            proyectHeader.tools.map((tool, i)=>{
+                                return(
+
+                                    <div key={i} className={`thumbnail-xs thumbnail-` + tool  }></div>
+                                )
+                            })
+                        }
+
                     </div>
                 </div>
 
                <div  className="hidden md:block" >
-                    Es una pagina que cree con los diferentes tipos de realidad aumentada en AR.js con un plus de Model Viewer.
-
-Logre obtener los conocimientos para realizar el proyecto en EDteam en el curso Realida aumentada en la web con AR.js.
-
-Tengo pensado ir modificando o adaptando el sitio web, para explotar mejor los conocimientos.
+                    {proyectHeader.descripcion}
                 </div>
             </div>
         </section>
 
 
         <div className="mt-4 sm:hidden" >
-            Es una pagina que cree con los diferentes tipos de realidad aumentada en AR.js con un plus de Model Viewer.
-
-Logre obtener los conocimientos para realizar el proyecto en EDteam en el curso Realida aumentada en la web con AR.js.
-
-Tengo pensado ir modificando o adaptando el sitio web, para explotar mejor los conocimientos.
+            {proyectHeader.descripcion}
         </div>
         </section>
     )
