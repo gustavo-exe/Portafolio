@@ -46,6 +46,25 @@ export const Proyects = () => {
             gallery: [
                 'https://raw.githubusercontent.com/gustavo-exe/LoginApp/master/src/images/Mockup.jpg'
             ]
+        },
+        {
+            id: 2,
+            header: {
+                
+                    nombre: 'Doberkey',
+                    logo: '/proyects/doberkey-logo.svg',
+                    descripcion: `
+                    Esta es una APP que fue creada con React Native, llamada  Doberkey (el nombre se deribo de una rasa de un perro y la palabra llave en ingles) la app ayuda a mantener un inventario de claves ordenado, simplemente agregando datos como password y demas dettales del sitio al que pertenece.
+                    `,
+                    publictSite: '',
+                    repositorio: 'https://github.com/gustavo-exe/Doberkey',
+                    tools: ['1', '4']
+                
+            },
+            gallery: [
+                'https://user-images.githubusercontent.com/61214852/102045057-bde51980-3d9d-11eb-9b13-941a756732c2.jpg',
+                'https://user-images.githubusercontent.com/61214852/102173999-08c86500-3e62-11eb-9111-572684efdbde.jpg'
+            ]
         }
     ]
 
@@ -53,7 +72,7 @@ export const Proyects = () => {
     return (
         <section className="container-layout mt-32" id="Proyects"  >
 
-            <div  className="border-b  border-b-black t-h3" >
+            <div  className="border-b  border-b-black t-h3 pl-4 pr-4" >
             Proyectos
             </div>
 
@@ -66,7 +85,7 @@ export const Proyects = () => {
                     {
                         listProyects.map(proyect=>{
                             return(
-                                <div  className={style.theWidth + ' p-1'} >
+                                <div  key={proyect.id} className={style.theWidth + ' p-1'} >
                                     <ProyectHeader 
                                         key={proyect.id} 
                                         proyectHeader={proyect.header}  

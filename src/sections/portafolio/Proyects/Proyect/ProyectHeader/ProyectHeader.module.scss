@@ -18,3 +18,15 @@
 .web{
     background-image: url('../../../../../../public/contact/Web.svg');
 }
+
+.clampText {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.showAll {
+    -webkit-line-clamp: none;
+}

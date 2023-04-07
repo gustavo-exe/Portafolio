@@ -2,7 +2,7 @@ import style from "./Contact.module.scss";
 
 export const Contact = () =>{
     return(
-        <div  className="pt-32 pb-32"  >
+        <div  className="pt-32 pb-32 max-sm:pb-8"  >
           <section  className="container-layout  flex p-4  flex-wrap "  >
 
             <div  className="bg-variant p-2 flex-1 " id="contact" >
