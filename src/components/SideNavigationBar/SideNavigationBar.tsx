@@ -1,5 +1,5 @@
 import styles from "./SideNavigationBar.module.scss";
-
+import { Link } from "react-scroll";
 
 export const SideNavigationBar = (props:any) =>{
 
@@ -18,43 +18,39 @@ return(
 
     <section   className="mt-14 p-4 grid grid-cols-2  gap-2 " >
         <div  className="row-start-1 row-end-2 flex justify-center items-center" >
-            <a onClick={closeAside} href="#AcercaDe">
+            <Link className="cursor-pointer" onClick={closeAside} smooth={true} to="AcercaDe">
             <div className={styles.bubbleBig  } >
-                    Acerca 
-                    <br />
-                    de Elias 
+                    Elias' overview
             </div>
-            </a>
+            </Link>
         </div>
         <div  className="row-start-1 row-end-3 mt-8 flex items-center " >
-               <a onClick={closeAside} href="#Actividades">
+               <Link className="cursor-pointer" onClick={closeAside} smooth={true} to="Actividades">
                 <div className={styles.bubbleBig  } >
                     Actividades
                 </div>
-               </a>
+               </Link>
         </div>
         <div  className="row-start-2 row-end-4 ml-8  flex justify-center items-center " >
-               <a onClick={closeAside} href="#iCan">
+               <Link className="cursor-pointer" onClick={closeAside} smooth={true} to="iCan">
                 <div className={styles.bubbleSmall  } >
-                    I can do
-                    and
-                    tools
+                    Skills & tools
                 </div>
-               </a>
+               </Link>
         </div>
         <div  className=" mt-4  flex justify-center items-center" >
-               <a onClick={closeAside} href="#Proyectos">
+               <Link className="cursor-pointer" onClick={closeAside} smooth={true} to="Proyects">
                 <div className={styles.bubbleMedium  } >
                     Proyectos
                 </div>
-               </a>
+               </Link>
         </div>
         <div  className=" flex items-center justify-center" >
-           <a onClick={closeAside} href="#contact">
+           <Link className="cursor-pointer" onClick={closeAside} smooth={true} to="contact">
             <div className={styles.bubbleBig + '   ' } >
                 Contacto
             </div>
-           </a>
+           </Link>
         </div>
     </section>
     </div>

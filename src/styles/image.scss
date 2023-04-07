@@ -4,7 +4,13 @@
     height: 64px;
 }
 
-$numero-thumbnails: 16;
+.thumbnail-xs{
+   width: 24px;
+    background-size: 24px 24px;
+    height: 24px;
+}
+
+$numero-thumbnails: 20;
 
 @for $i from 1 through $numero-thumbnails {
     

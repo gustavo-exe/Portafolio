@@ -1,0 +1,10 @@
+.theWidth{
+    width: 100% ;
+    min-width: 1040px;
+}
+
+@media (max-width: 1040px) {
+    .theWidth {
+      min-width: 100%;
+    }
+  }

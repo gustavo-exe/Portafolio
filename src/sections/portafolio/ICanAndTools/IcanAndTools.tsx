@@ -4,13 +4,14 @@ export const IcanAndTools = () =>{
    
 
     const chips = [
+        'Team Leader',
         'Desarrollo Web',
         'Responsive design',
         'Graphic Design and Branding',
-        'UI - UX (sometimes)'
+        'UI - UX (sometimes)',
     ]
 
-    const thumbnails = Array.from({ length: 16 }, (_, i) => i + 1);
+    const thumbnails = Array.from({ length: 20 }, (_, i) => i + 1);
 
     return(
         <div  id="iCan" className="bg-dark-yet color-white" >

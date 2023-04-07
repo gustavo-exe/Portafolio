@@ -5,6 +5,7 @@ import { Actividades } from "@/sections/portafolio/Actividades/Actividades";
 import { Contact } from "@/sections/portafolio/Contact/Contact";
 import { Cover } from "@/sections/portafolio/Cover/Cover";
 import { IcanAndTools } from "@/sections/portafolio/ICanAndTools/IcanAndTools";
+import { Proyects } from "@/sections/portafolio/Proyects/Proyects";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <About/>
       <Actividades/>
       <IcanAndTools/>
+      <Proyects/>
       <Contact/>
 
       <Footer/>
