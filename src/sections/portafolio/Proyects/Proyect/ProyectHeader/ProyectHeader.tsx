@@ -27,11 +27,11 @@ export const ProyectHeader = ({ proyectHeader }: { proyectHeader: ProyectHeaderI
                 
                 <div>
                     <div className="mt-2 mb-2 flex gap-2 " >
-                        <a href={proyectHeader.repositorio} target="_blank" rel="noopener noreferrer">
+                        <a href={proyectHeader.repositorio} target="_blank" className="cursor-pointer">
                             <div  className={style.github} ></div>
                         </a>
                         
-                        <a href={proyectHeader.publictSite} target="_blank" rel="noopener noreferrer">
+                        <a href={proyectHeader.publictSite} target="_blank" className="cursor-pointer">
                             <div  className={style.web} ></div>
                         </a>
 
