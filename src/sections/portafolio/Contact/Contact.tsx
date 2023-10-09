@@ -9,14 +9,9 @@ export const Contact = () =>{
 
 
               <section >
-                <section>
-                  <div  className="t-h2" >
-                    HOLO!!!
-                  </div>
-                  <div  className="t-h3" >
-                    ¿Conversamos?
-                  </div>
-                </section>
+                <p  className="t-h3 mb-4" >
+                  ¿Conversamos?
+                </p>
 
                 <div>
                 Ademas de programar... Me gusta ir por un cafe, comer hamburguesas,  hablar de artistas, tomar fotos, videojuegos  de nintendo, ver peliculas (Marvel o DC ambos me gustan)

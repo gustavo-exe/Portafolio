@@ -80,13 +80,14 @@ export const Cover = () =>{
 
                     <div  ref={containerRef} className={style.containerBox} >
                         
-                        <div  ref={boxRef}  className={style.box} >
+                        <div  ref={boxRef}  className={style.box + ' select-none'} >
                             <div  className={style.DragWidget} >
 
                                 <section className={style.header} >
-                                    <div className="flex   items-center  gap-2"  >
+                                    <div className="flex   items-center  gap-2 "  >
                                         <div className={style.cuadrado} ></div>
-                                        <span>Drag me</span>
+                                        <span className='hidden md:block' >Drag me</span>
+                                        <span className='block md:hidden' > 1999</span>
                                     </div>
 
                                     <div>
