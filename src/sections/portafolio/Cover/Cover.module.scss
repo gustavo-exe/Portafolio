@@ -57,12 +57,16 @@
     .coverTexts::before{
         font-size: 6rem;
         transform: translateY(0%);
+        
     }
 }
 
 .coverImage{
     width: 100%;
-    height: calc(100vh - 80px);
+    
+    @media screen and (min-width: 640px) {
+        height: calc(100vh - 80px);
+    }
     background-repeat: no-repeat;
     flex: 1;
    
