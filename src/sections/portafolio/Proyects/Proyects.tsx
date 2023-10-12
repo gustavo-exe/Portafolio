@@ -65,7 +65,26 @@ export const Proyects = () => {
                 'https://user-images.githubusercontent.com/61214852/102045057-bde51980-3d9d-11eb-9b13-941a756732c2.jpg',
                 'https://user-images.githubusercontent.com/61214852/102173999-08c86500-3e62-11eb-9111-572684efdbde.jpg'
             ]
+        },
+        {
+            id: 3,
+            header: {
+                
+                    nombre: 'Face Analizer',
+                    logo: '/proyects/cognitive-service.jpg',
+                    descripcion: `
+                    Aprovecha Azure Cognitive Services para identificar rostros en imágenes, permitiendo la detección de características como la edad, emociones y género, ofreciendo una visión detallada de la expresión facial.
+                    `,
+                    publictSite: '',
+                    repositorio: 'https://github.com/gustavo-exe/FaceAnalizer',
+                    tools: ['1', '4' ,'5']
+                
+            },
+            gallery: [
+                'https://i.ibb.co/ngLQSDZ/face-analizer.jpg',
+            ]
         }
+
     ]
 
 
