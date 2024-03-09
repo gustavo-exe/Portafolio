@@ -2,38 +2,41 @@ import styles from './Actividades.module.scss';
 
 export const Actividades = () => {
 
-    return(
+    return (
         <>
-        <section id="Actividades" className={styles.Actividades+ '  container-layout mt-24 mb-24'} >
-            <div className={styles.actividadesActividad + ' ' + styles.actividadesActividadLeft} >
-               
-                <div>
-                    <p className="actividades-rotate" >Ahora</p>
-                    <p >
-                    Desarrollador en Creative  <br />  Information Technologies
-                    </p>
+            <section id="Actividades" className={styles.Actividades + '  container-layout mt-24 mb-24 p-4 lg:p-0'} >
+
+
+                <p className='t-h3 text-center' >Actividades</p>
+
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8' >
+                    <article className={styles.mlsa + ' border rounded-2xl shadow-xl bg-dark-eerie text-white cursor-pointer'} >
+                        <div className='hover:opacity-0 py-6 px-4' >
+                            <p  className='mb-2'  >Microsoft learn
+                                student ambassador</p>
+                            <p className='opacity-40' >2021 - 2022</p>
+                        </div>
+                    </article>
+
+                    <article className={styles.cit + ' border rounded-2xl shadow-xl bg-dark-eerie text-white cursor-pointer'} >
+                        <div className='hover:opacity-0 py-6 px-4' >
+                            <p  className='mb-2'  >Desarrollador en Creative
+                                Information Technologies</p>
+                            <p className='opacity-40' >2022 - Actulidad</p>
+                        </div>
+                    </article>
+
+                    <article className={styles.edTeam + ' border rounded-2xl shadow-xl bg-dark-eerie text-white cursor-pointer'} >
+                        <div className='hover:opacity-0 py-6 px-4' >
+                            <p className='mb-2' > Asistente de curso en EDteam </p>
+                            <p className='opacity-40' >2021</p>
+                        </div>
+                    </article>
+
                 </div>
 
-                <div>
-                    <p className="actividades-rotate" >2021</p>
-                    <p >Asistente de<br></br> curso en EDteam</p>
-                </div>
-                
-            </div>
-            
-            <h1>Actividades</h1>
-            
-            <div className={styles.actividadesActividad + ' ' + styles.actividadesActividadRight}  >
-                <div>
-                    <p className="actividades-rotate" >2021 <br /> 2022  </p>
-                    <p>Microsoft learn <br></br> student ambassador</p>
-                </div>
-                <div>
-                    <p className="actividades-rotate" >2019 <br /> 2022  </p>
-                    <p>Estudiante de Ingenieria <br></br> en Ciencias de la Computacion</p>
-                </div>
-            </div>
-        </section>
+
+            </section>
         </>
     )
 }
