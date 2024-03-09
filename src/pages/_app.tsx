@@ -7,6 +7,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
           <title>Portafolio Gustavo Elias</title>
+          <meta name="description" content="Desarrollador web, diseñador UI e Ingeniero en Ciencias de la computación." />
+          <meta name="keywords" content="gustavo, elias, meza, natute" />
         </Head>
 
       <Component {...pageProps} />
