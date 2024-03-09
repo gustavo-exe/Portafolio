@@ -5,11 +5,11 @@ export const Contact = () =>{
         <div  className="pt-32 pb-32 max-sm:pb-8"  >
           <section  className="container-layout  flex p-4  flex-wrap "  >
 
-            <div  className="bg-variant p-2 flex-1 " id="contact" >
+            <div  className="bg-variant p-8 lg:p-10 flex-1 " id="contact" >
 
 
-              <section >
-                <p  className="t-h3 mb-4" >
+              <section className="relative" >
+                <p  className="text-4xl md:text-6xl mb-4 absolute font-extrabold -top-[3.6rem] lg:-top-[5rem] -left-[3rem]" >
                   ¿Conversamos?
                 </p>
 
