@@ -1,8 +1,12 @@
-.mlsa, .cit, .edTeam{
+.mlsa, .cit, .edTeam, .lady{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.lady:hover{
+    background-image: url(https://www.corporacionladylee.com/wp-content/uploads/2018/11/cover-CLL-1630x860-1.jpg);
+}
+
 .mlsa:hover{
     background-image: url(https://techcommunity.microsoft.com/t5/image/serverpage/image-id/241622i55A6A82D9CCC19DD);
 }

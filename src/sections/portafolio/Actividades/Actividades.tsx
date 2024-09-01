@@ -10,6 +10,13 @@ export const Actividades = () => {
                 <p className='t-h3 text-center' >Actividades</p>
 
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8' >
+                    <article className={styles.lady + ' border rounded-2xl shadow-xl bg-dark-eerie text-white cursor-pointer'} >
+                        <div className='hover:opacity-0 py-6 px-4' >
+                            <p  className='mb-2'  > Programador Senior </p>
+                            <p className='opacity-40' >2024 - Actulidad</p>
+                        </div>
+                    </article>
+
                     <article className={styles.mlsa + ' border rounded-2xl shadow-xl bg-dark-eerie text-white cursor-pointer'} >
                         <div className='hover:opacity-0 py-6 px-4' >
                             <p  className='mb-2'  >Microsoft learn
@@ -22,7 +29,7 @@ export const Actividades = () => {
                         <div className='hover:opacity-0 py-6 px-4' >
                             <p  className='mb-2'  >Desarrollador en Creative
                                 Information Technologies</p>
-                            <p className='opacity-40' >2022 - Actulidad</p>
+                            <p className='opacity-40' >2022 - 2024</p>
                         </div>
                     </article>
 
