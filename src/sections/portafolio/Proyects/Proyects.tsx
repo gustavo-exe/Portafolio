@@ -12,15 +12,18 @@ export const Proyects = () => {
             id: 4,
             header: {
                 
-                    nombre: 'Expo venta de arte',
+                    nombre: 'Expo - venta de arte',
                     logo: '',
-                    descripcion: `Un proyecto especial para el club rotact de choloma en una de sus actividades, sobre venta y expo de arte.`,
+                    descripcion: `Un proyecto especial para el Club Rotaract de Choloma, enfocado en una de sus actividades más destacadas: una venta y exposición de arte. Este evento busca promover el talento artístico local, ofreciendo a los asistentes la oportunidad de adquirir piezas únicas.`,
                     publictSite: 'https://expoventaarte.netlify.app/',
                     repositorio: 'https://github.com/gustavo-exe/expo-venta-arte',
                     tools: ['9', '18']
                 
             },
-            gallery: []
+            gallery: [
+                "https://raw.githubusercontent.com/gustavo-exe/Portafolio/c83cbc0ca7b064d342fe946af7ccfc41254ed55a/public/proyects/mockups/3-devices-white.png",
+                "https://raw.githubusercontent.com/gustavo-exe/Portafolio/c83cbc0ca7b064d342fe946af7ccfc41254ed55a/public/proyects/mockups/screely-1725219210357.png"
+            ]
         },
         {
             id: 3,
