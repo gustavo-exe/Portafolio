@@ -13,7 +13,7 @@ export const Actividades = () => {
                     <article className={styles.lady + ' border rounded-2xl shadow-xl bg-dark-eerie text-white cursor-pointer'} >
                         <div className='hover:opacity-0 py-6 px-4' >
                             <p  className='mb-2'  > Programador Senior </p>
-                            <p className='opacity-40' >2024 - Actulidad</p>
+                            <p className='opacity-40' >2024 - Actualidad</p>
                         </div>
                     </article>
 
