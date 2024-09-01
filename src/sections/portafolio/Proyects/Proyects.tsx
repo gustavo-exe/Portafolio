@@ -9,6 +9,41 @@ export const Proyects = () => {
 
     const listProyects = [
         {
+            id: 4,
+            header: {
+                
+                    nombre: 'Expo - venta de arte',
+                    logo: '',
+                    descripcion: `Un proyecto especial para el Club Rotaract de Choloma, enfocado en una de sus actividades más destacadas: una venta y exposición de arte. Este evento busca promover el talento artístico local, ofreciendo a los asistentes la oportunidad de adquirir piezas únicas.`,
+                    publictSite: 'https://expoventaarte.netlify.app/',
+                    repositorio: 'https://github.com/gustavo-exe/expo-venta-arte',
+                    tools: ['9', '18']
+                
+            },
+            gallery: [
+                "https://raw.githubusercontent.com/gustavo-exe/Portafolio/c83cbc0ca7b064d342fe946af7ccfc41254ed55a/public/proyects/mockups/3-devices-white.png",
+                "https://raw.githubusercontent.com/gustavo-exe/Portafolio/c83cbc0ca7b064d342fe946af7ccfc41254ed55a/public/proyects/mockups/screely-1725219210357.png"
+            ]
+        },
+        {
+            id: 3,
+            header: {
+                
+                    nombre: 'Face Analizer',
+                    logo: '/proyects/cognitive-service.jpg',
+                    descripcion: `
+                    Aprovecha Azure Cognitive Services para identificar rostros en imágenes, permitiendo la detección de características como la edad, emociones y género, ofreciendo una visión detallada de la expresión facial.
+                    `,
+                    publictSite: '',
+                    repositorio: 'https://github.com/gustavo-exe/FaceAnalizer',
+                    tools: ['1', '4' ,'5']
+                
+            },
+            gallery: [
+                'https://i.ibb.co/ngLQSDZ/face-analizer.jpg',
+            ]
+        },
+        {
             id: 0,
             header: {
                 
@@ -66,24 +101,6 @@ export const Proyects = () => {
                 'https://user-images.githubusercontent.com/61214852/102173999-08c86500-3e62-11eb-9111-572684efdbde.jpg'
             ]
         },
-        {
-            id: 3,
-            header: {
-                
-                    nombre: 'Face Analizer',
-                    logo: '/proyects/cognitive-service.jpg',
-                    descripcion: `
-                    Aprovecha Azure Cognitive Services para identificar rostros en imágenes, permitiendo la detección de características como la edad, emociones y género, ofreciendo una visión detallada de la expresión facial.
-                    `,
-                    publictSite: '',
-                    repositorio: 'https://github.com/gustavo-exe/FaceAnalizer',
-                    tools: ['1', '4' ,'5']
-                
-            },
-            gallery: [
-                'https://i.ibb.co/ngLQSDZ/face-analizer.jpg',
-            ]
-        }
 
     ]
 

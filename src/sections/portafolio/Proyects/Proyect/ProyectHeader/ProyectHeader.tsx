@@ -11,7 +11,7 @@ export const ProyectHeader = ({ proyectHeader }: { proyectHeader: ProyectHeaderI
         <section  className="flex flex-col" >
 
         <section  className="flex md:gap-10 mt-6  max-sm:gap-4" >
-            <div>
+            {proyectHeader.logo ? <div>
                 <div  className={style.logo + ' shadow-md relative border-8'} >
                     <div  className="absolute w-full h-full" >
 
@@ -24,7 +24,8 @@ export const ProyectHeader = ({ proyectHeader }: { proyectHeader: ProyectHeaderI
                     </div>
                     
                 </div>
-            </div>
+            </div> : <></>}
+            
 
             <div   >
                 <div  className="text-2xl font-bold flex-1 text-wrap " >{proyectHeader.nombre}</div>

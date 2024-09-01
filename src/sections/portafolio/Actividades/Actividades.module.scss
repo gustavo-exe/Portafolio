@@ -1,41 +1,20 @@
-.Actividades{
-    align-items: center;
+.mlsa, .cit, .edTeam, .lady{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.lady:hover{
+    background-image: url(https://www.corporacionladylee.com/wp-content/uploads/2018/11/cover-CLL-1630x860-1.jpg);
 }
 
-.Actividades div{
-    display: flex;
-    margin-bottom: 1rem;
+.mlsa:hover{
+    background-image: url(https://techcommunity.microsoft.com/t5/image/serverpage/image-id/241622i55A6A82D9CCC19DD);
 }
 
-.Actividades p{
-    margin-bottom: 0;
+.cit:hover{
+    background-image: url('../../../../public/activity/creative.png');
 }
 
-.Actividades h1{
-    margin:2rem 0rem 2rem 0rem;
-    font-size: 12vw;
-    text-align: center;
-}
-.Actividades div p:nth-child(1){
-    transform: rotate(90deg);
-    opacity: 70%;
-    margin-right: .2rem;
-}
-
-.actividadesActividad{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.actividadesActividadRight{
-    
-    align-items: flex-end;
-    justify-content: space-around;
-}
-
-.actividadesActividadLeft{
-    
-    align-items: flex-start;
+.edTeam:hover{
+    background-image: url('../../../../public/activity/ed-team.jpg');
 }
